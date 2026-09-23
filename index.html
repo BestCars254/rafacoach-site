@@ -1,514 +1,548 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>RafaCoach｜今度こそ、平均以上の身体へ</title>
-<meta name="description" content="何度やっても続かなかった。でも、まだ諦めていない人へ。仕事と生活に合わせたトレーニングと食事で、平均以上の身体を目指すオンラインコーチング。IFBB公認トレーナー イワザキ ハファエル。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RafaCoach">
 <meta property="og:title" content="今度こそ、平均以上の身体へ。｜RafaCoach">
 <meta property="og:description" content="ただジムに通うだけで、終わらせない。仕事と生活に合わせたトレーニングと食事で、平均以上の身体を目指すオンラインコーチング。IFBB公認トレーナー イワザキ ハファエル。">
-<meta property="og:image" content="img/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="今度こそ、平均以上の身体へ。｜RafaCoach">
 <meta name="twitter:description" content="ただジムに通うだけで、終わらせない。IFBB公認トレーナーによるオンラインコーチング。">
-<meta name="twitter:image" content="img/og.jpg">
+<meta property="og:image" content="https://rafacoach.jp/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://rafacoach.jp/">
+<meta name="twitter:image" content="https://rafacoach.jp/img/og.jpg">
+<link rel="canonical" href="https://rafacoach.jp/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 fill=%27%23111%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-family=%27Helvetica,Arial%27 font-size=%2740%27 font-weight=%27bold%27 fill=%27%23CC1F1F%27 text-anchor=%27middle%27%3ER%3C/text%3E%3C/svg%3E">
+<meta name="description" content="何度やっても続かなかった。でも、まだ諦めていない人へ。仕事と生活に合わせたトレーニングと食事で、平均以上の身体を目指すオンラインコーチング。IFBB公認トレーナー イワザキ ハファエル。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;600;700&display=swap">
 <style>
-/* ===== X FITNESS GYM design system (light-only, as the source site) ===== */
+/* ===== RafaCoach — built to Apple Human Interface Guidelines =====
+   Type   : HIG iOS text styles (body 17pt, minimum 11pt) with HIG tracking —
+            negative below 24pt, positive above. Sizes in rem, so the reader's
+            own text-size setting scales the page (the web's Dynamic Type).
+   Color  : semantic tokens after the iOS dynamic colors (label / secondaryLabel /
+            separator / grouped backgrounds), with light, dark and
+            increased-contrast variants. Brand red is the accent, spent on one
+            primary action at a time.
+   Layout : 8pt spacing scale, safe areas, 44pt minimum hit targets,
+            full-bleed artwork, grouped inset lists, scroll edge effect. */
+
 :root{
-  --red:#CC1F1F; --red-dark:#A81919; --red-10:rgba(204,31,31,.10);
-  --ink:#1A1A1A; --night:#111111;
-  --soft:#F7F7F7; --white:#FFFFFF;
-  --n900:#171717; --n700:#404040; --n600:#525252; --n500:#737373; --n300:#D4D4D4; --n200:#E5E5E5; --n100:#F5F5F5;
-  --line-green:#06C755;
+  color-scheme:light dark;
+
+  /* backgrounds — iOS grouped background set */
+  --bg:#FFFFFF;                  /* systemBackground */
+  --bg-grouped:#F2F2F7;          /* systemGroupedBackground (systemGray6) */
+  --card:#FFFFFF;                /* secondarySystemGroupedBackground */
+  --fill:#F2F2F7;                /* quiet blocks */
+
+  /* foreground — iOS label set */
+  --label:#000000;
+  --label-2:rgba(60,60,67,.60);
+  --label-3:rgba(60,60,67,.30);
+  --separator:rgba(60,60,67,.29);
+
+  /* accent */
+  --red:#CC1F1F;                 /* brand */
+  --red-press:#A81919;
+  --red-tint:rgba(204,31,31,.10);
+  --on-accent:#FFFFFF;
+
+  /* a dark band, used as a deliberate surface in both appearances */
+  --band:#0B0B0C;
+  --band-label:#FFFFFF;
+  --band-label-2:rgba(235,235,245,.60);
+  --band-separator:rgba(84,84,88,.65);
+  --band-red:#FF6961;
+
+  --card-shadow:0 1px 3px rgba(0,0,0,.05);
+
+  /* 8pt spacing scale */
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:40px; --s6:48px;
+  --s7:56px; --s8:64px; --s10:80px; --s12:96px;
+
+  --maxw:1120px;
+  --margin:20px;                 /* system-like content margin */
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
-body{margin:0; background:var(--white); color:var(--ink);
-  font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",system-ui,sans-serif;
-  font-size:16px; line-height:1.75; -webkit-font-smoothing:antialiased}
+@media(min-width:768px){ :root{ --margin:40px } }
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#000000;
+    --bg-grouped:#000000;
+    --card:#1C1C1E;
+    --fill:#1C1C1E;
+    --label:#FFFFFF;
+    --label-2:rgba(235,235,245,.60);
+    --label-3:rgba(235,235,245,.30);
+    --separator:rgba(84,84,88,.65);
+    --red:#FF6961;
+    --red-press:#FF8B85;
+    --red-tint:rgba(255,105,97,.18);
+    --on-accent:#000000;
+    --card-shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#000000;
+  --bg-grouped:#000000;
+  --card:#1C1C1E;
+  --fill:#1C1C1E;
+  --label:#FFFFFF;
+  --label-2:rgba(235,235,245,.60);
+  --label-3:rgba(235,235,245,.30);
+  --separator:rgba(84,84,88,.65);
+  --red:#FF6961;
+  --red-press:#FF8B85;
+  --red-tint:rgba(255,105,97,.18);
+  --on-accent:#000000;
+  --card-shadow:none;
+}
+
+/* HIG asks for an increased-contrast variant of every custom color */
+@media (prefers-contrast: more){
+  :root{
+    --label-2:rgba(60,60,67,.82);
+    --label-3:rgba(60,60,67,.50);
+    --separator:rgba(60,60,67,.50);
+    --red:#B31717;
+    --red-tint:rgba(179,23,23,.14);
+    --band-label-2:rgba(235,235,245,.86);
+  }
+  :root:not([data-theme="light"]){
+    --label-2:rgba(235,235,245,.86);
+    --label-3:rgba(235,235,245,.55);
+    --separator:rgba(120,120,128,.80);
+    --red:#FF8B85;
+  }
+}
+
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+html{
+  font-size:100%;                /* respect the reader's own text size */
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%; text-size-adjust:100%;
+  scroll-padding-top:calc(56px + env(safe-area-inset-top, 0px));
+}
+body{
+  margin:0; background:var(--bg); color:var(--label);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;
+  font-size:1.0625rem;           /* HIG body: 17pt */
+  line-height:1.76;              /* loose leading, which HIG allows for long passages */
+  letter-spacing:-.026em;        /* HIG tracking at 17pt: -0.43pt */
+  font-weight:400;               /* HIG: avoid light weights */
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
 img{max-width:100%; display:block}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--red); outline-offset:3px; border-radius:6px}
-h1,h2,h3,h4{margin:0; font-family:"Noto Serif JP",serif; font-weight:700; color:var(--ink); text-wrap:balance}
+a{color:inherit; text-decoration:none}
 p{margin:0}
+h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
+  word-break:auto-phrase; line-break:strict; overflow-wrap:anywhere}
+:focus-visible{outline:3px solid var(--red); outline-offset:3px; border-radius:12px}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
 
-.wrap{max-width:1280px; margin:0 auto; padding:0 20px}
-.wrap-narrow{max-width:768px; margin:0 auto; padding:0 20px}
-.wrap-mid{max-width:1024px; margin:0 auto; padding:0 20px}
-@media(min-width:768px){ .wrap,.wrap-narrow,.wrap-mid{padding:0 40px} }
-.sec{padding:80px 0}
-@media(min-width:768px){ .sec{padding:112px 0} }
-.sec-soft{background:var(--soft)}
-.sec-white{background:var(--white)}
-.sec-dark{background:var(--night); color:#fff; position:relative; overflow:hidden}
-
-.eyebrow{display:block; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.25em; color:var(--red); font-family:"Noto Sans JP",sans-serif}
-.sec-dark .eyebrow{color:#FF5A5A}
-.shead{max-width:768px}
-.shead.center{margin:0 auto; text-align:center}
-.shead h2{margin-top:16px; font-size:28px; line-height:1.3}
-@media(min-width:768px){ .shead h2{font-size:40px; line-height:1.25} }
-.sec-dark .shead h2{color:#fff}
-.shead .sub{margin-top:20px; font-size:16px; line-height:1.8; color:var(--n600)}
-@media(min-width:768px){ .shead .sub{font-size:17px} }
-.sec-dark .shead .sub{color:rgba(255,255,255,.7)}
-
-/* buttons: full pill, as source */
-.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:9999px;
-  padding:14px 28px; font-size:14px; font-weight:700; text-decoration:none; border:1px solid transparent;
-  font-family:"Noto Sans JP",sans-serif; transition:background-color .18s ease, border-color .18s ease, color .18s ease}
-.btn-red{background:var(--red); color:#fff; box-shadow:0 1px 2px rgba(0,0,0,.05)}
-.btn-red:hover{background:var(--red-dark)}
-.btn-outline{border-color:rgba(26,26,26,.2); background:#fff; color:var(--ink)}
-.btn-outline:hover{border-color:var(--ink); background:var(--soft)}
-.btn-onDark{border-color:rgba(255,255,255,.25); color:#fff; background:transparent}
-.btn-onDark:hover{border-color:#fff; background:rgba(255,255,255,.06)}
-.btn-line{background:var(--line-green); color:#04331A}
-.btn-line:hover{background:#05B34C}
-.btnrow{display:flex; flex-direction:column; gap:12px; margin-top:36px}
-@media(min-width:640px){ .btnrow{flex-direction:row; flex-wrap:wrap} }
-
-/* hero */
-.hero{background:var(--white); overflow:hidden}
-.hero .grid{display:grid; gap:48px; padding:64px 0}
-@media(min-width:768px){ .hero .grid{grid-template-columns:1.05fr 1fr; gap:64px; padding:96px 0} }
-@media(min-width:1024px){ .hero .grid{padding:112px 0} }
-.hero .col{display:flex; flex-direction:column; justify-content:center}
-.hero h1{margin-top:24px; font-size:40px; line-height:1.2; font-weight:700}
-@media(min-width:768px){ .hero h1{font-size:64px; line-height:1.1} }
-.hero .lead{margin-top:28px; max-width:36em; font-size:16px; line-height:1.85; color:var(--n600)}
-@media(min-width:768px){ .hero .lead{font-size:17px} }
-.hero .fine{margin-top:20px; font-size:13px; line-height:1.8; color:var(--n500); max-width:34em}
-.stats{margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr); gap:24px; border-top:1px solid var(--n200); padding-top:32px}
-.stats .big{font-family:"Bebas Neue",sans-serif; font-size:30px; letter-spacing:.05em; color:var(--red); line-height:1.1}
-@media(min-width:768px){ .stats .big{font-size:36px} }
-.stats .lab{margin-top:4px; font-size:12px; color:var(--n500)}
-@media(min-width:768px){ .stats .lab{font-size:14px} }
-.photo{aspect-ratio:4/5; width:100%; border-radius:24px; object-fit:cover; background:var(--n100)}
-
-/* feature cards */
-.cards{margin-top:56px; display:grid; gap:20px}
-@media(min-width:768px){ .cards{grid-template-columns:repeat(2,1fr)} }
-@media(min-width:1024px){ .cards{grid-template-columns:repeat(3,1fr)} }
-.card{height:100%; border-radius:16px; background:#fff; padding:32px; box-shadow:0 1px 2px rgba(0,0,0,.05);
-  box-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px var(--n100); transition:transform .2s ease, box-shadow .2s ease}
-.card:hover{transform:translateY(-4px); box-shadow:0 10px 24px -8px rgba(0,0,0,.15), 0 0 0 1px var(--n100)}
-.card .num{display:flex; height:40px; width:40px; align-items:center; justify-content:center; border-radius:9999px;
-  background:var(--red-10); color:var(--red); font-weight:700; font-size:14px; font-family:"Bebas Neue",sans-serif; letter-spacing:.08em}
-.card h3{margin-top:20px; font-size:18px; line-height:1.5}
-.card p{margin-top:14px; font-size:14px; line-height:1.9; color:var(--n700)}
-
-/* quote + sources */
-.quote{margin:32px 0; border-left:4px solid var(--red); padding:6px 0 6px 24px; font-family:"Noto Serif JP",serif;
-  font-weight:500; font-size:19px; line-height:1.85; max-width:34em}
-.body-p{margin-top:20px; font-size:16px; line-height:1.9; color:var(--n700); max-width:40em}
-.src{margin-top:24px; font-size:13px; line-height:1.8; color:var(--n500); max-width:44em}
-.src a{color:var(--red-dark); text-underline-offset:3px}
-
-/* pricing */
-.plans{margin-top:48px; display:grid; gap:24px}
-@media(min-width:768px){ .plans{grid-template-columns:repeat(3,1fr)} }
-.plan{position:relative; display:flex; height:100%; flex-direction:column; border-radius:24px; padding:32px;
-  border:1px solid var(--n200); background:#fff}
-.plan.rec{background:var(--night); color:#fff; border:0; box-shadow:0 20px 25px -5px rgba(0,0,0,.2), 0 0 0 2px var(--red)}
-.plan .badge{position:absolute; right:24px; top:24px; border-radius:9999px; background:var(--red); padding:4px 12px;
-  font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:#fff}
-.plan .pe{font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:var(--n500)}
-.plan.rec .pe{color:rgba(255,255,255,.6)}
-.plan h3{margin-top:8px; font-size:24px}
-.plan.rec h3{color:#fff}
-.plan .price{margin-top:20px; display:flex; align-items:baseline; gap:8px}
-.plan .price b{font-family:"Bebas Neue",sans-serif; font-size:48px; font-weight:400; letter-spacing:.02em; line-height:1; color:var(--ink)}
-.plan.rec .price b{color:#fff}
-.plan .price span{font-size:14px; color:var(--n500)}
-.plan.rec .price span{color:rgba(255,255,255,.7)}
-.plan .desc{margin-top:16px; flex:1; font-size:14px; line-height:1.9; color:var(--n600)}
-.plan.rec .desc{color:rgba(255,255,255,.75)}
-.plan .foot{margin-top:20px; border-top:1px solid var(--n100); padding-top:16px}
-.plan.rec .foot{border-top-color:rgba(255,255,255,.15)}
-.plan .foot .hi{display:flex; align-items:flex-start; gap:8px; font-size:14px; font-weight:700; color:var(--red)}
-.plan.rec .foot .hi{color:#fff}
-.plan .foot .opt{font-size:14px; color:var(--n500)}
-.plan.rec .foot .opt{color:rgba(255,255,255,.7)}
-.plan .foot .opt b{font-weight:700; color:var(--ink)}
-.plan.rec .foot .opt b{color:#fff}
-.common{margin:24px auto 0; max-width:768px; border-radius:16px; border:1px solid var(--n200); background:#fff;
-  padding:16px 24px; text-align:center; box-shadow:0 1px 2px rgba(0,0,0,.05)}
-.common .t{font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:var(--red)}
-.common p{margin-top:6px; font-size:14px; font-weight:700; color:var(--ink)}
-.fineprint{margin:16px auto 0; max-width:768px; text-align:center; font-size:12px; line-height:1.9; color:var(--n500)}
-
-/* steps */
-.steps{margin-top:48px; display:grid; gap:20px}
-@media(min-width:768px){ .steps{grid-template-columns:repeat(2,1fr)} }
-@media(min-width:1024px){ .steps{grid-template-columns:repeat(4,1fr)} }
-.step{border-radius:16px; background:#fff; padding:28px; box-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px var(--n100)}
-.step .n{font-family:"Bebas Neue",sans-serif; font-size:34px; letter-spacing:.06em; color:var(--red); line-height:1}
-.step h3{margin-top:12px; font-size:17px}
-.step p{margin-top:10px; font-size:14px; line-height:1.9; color:var(--n700)}
-
-/* faq */
-.faq{margin-top:48px; display:flex; flex-direction:column; gap:16px}
-.faq details{border-radius:16px; border:1px solid var(--n200); background:#fff; padding:20px 24px}
-.faq summary{display:flex; cursor:pointer; list-style:none; align-items:flex-start; justify-content:space-between;
-  gap:16px; text-align:left; font-weight:700; color:var(--ink); font-family:"Noto Sans JP",sans-serif; font-size:15px; line-height:1.7}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary .q{display:flex; align-items:flex-start; gap:12px}
-.faq summary .q::before{content:"Q"; font-family:"Bebas Neue",sans-serif; font-size:20px; line-height:1.1; color:var(--red); flex:none}
-.faq summary .plus{margin-top:2px; flex:none; color:var(--red); font-size:16px; transition:transform .2s ease}
-.faq details[open] summary .plus{transform:rotate(45deg)}
-.faq details p{margin-top:16px; font-size:14px; line-height:1.95; color:var(--n700)}
-.faq details p + p{margin-top:12px}
-
-/* bio */
-.bio{display:grid; gap:32px; align-items:start}
-@media(min-width:768px){ .bio{grid-template-columns:0.8fr 1.2fr; gap:48px} }
-.bio .info{border-radius:24px; background:#fff; padding:32px; box-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px var(--n100)}
-.bio .role{font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:var(--red)}
-.bio h3{margin-top:10px; font-size:26px}
-.bio .romaji{margin-top:4px; font-family:"Bebas Neue",sans-serif; font-size:18px; letter-spacing:.14em; color:var(--n500)}
-.bio .cred{margin:20px 0 0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px}
-.bio .cred li{font-size:12.5px; line-height:1.6; padding:6px 12px; border-radius:9999px; background:var(--n100); color:var(--n700)}
-.bio .cred li.hi{background:var(--red); color:#fff}
-.bio .say{margin-top:22px; font-family:"Noto Serif JP",serif; font-weight:500; font-size:17px; line-height:1.8;
-  border-left:4px solid var(--red); padding-left:18px; color:var(--ink)}
-.bio .txt{margin-top:20px; font-size:15px; line-height:1.95; color:var(--n700)}
-
-/* dark CTA with watermark */
-.watermark{pointer-events:none; position:absolute; right:-40px; top:50%; transform:translateY(-50%); user-select:none;
-  font-family:"Bebas Neue",sans-serif; font-size:320px; line-height:1; letter-spacing:.06em; color:rgba(255,255,255,.05)}
-@media(min-width:768px){ .watermark{font-size:480px} }
-.ctabox{position:relative; text-align:center}
-.ctabox h2{font-size:28px; line-height:1.3; color:#fff}
-@media(min-width:768px){ .ctabox h2{font-size:44px} }
-.ctabox .p{margin:24px auto 0; max-width:36em; font-size:16px; line-height:1.9; color:rgba(255,255,255,.7)}
-@media(min-width:768px){ .ctabox .p{font-size:17px} }
-.ctabox .btnrow{margin-top:40px; justify-content:center; align-items:center}
-.ctabox .cap{margin-top:14px; font-size:12px; text-transform:uppercase; letter-spacing:.14em; color:rgba(255,255,255,.5)}
-.keyword{margin:36px auto 0; max-width:520px; border-radius:24px; border:2px solid var(--red); background:rgba(204,31,31,.12); padding:28px}
-.keyword .k1{display:block; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:rgba(255,255,255,.55)}
-.keyword .k2{display:block; margin-top:10px; font-family:"Noto Serif JP",serif; font-weight:900; font-size:40px; line-height:1.2; letter-spacing:.08em; color:#fff}
-@media(min-width:768px){ .keyword .k2{font-size:54px} }
-.note-dark{margin-top:28px; font-size:13px; line-height:1.9; color:rgba(255,255,255,.55)}
-
-/* footer */
-footer{background:var(--night); color:rgba(255,255,255,.6); padding:40px 0; font-size:13px; line-height:1.9}
-footer .brandline{font-family:"Bebas Neue",sans-serif; font-size:20px; letter-spacing:.18em; color:#fff}
-footer .cols{display:flex; flex-wrap:wrap; gap:20px 48px; justify-content:space-between}
-footer p + p{margin-top:8px}
-footer a{color:#FF6B6B}
-
+.wrap{max-width:var(--maxw); margin:0 auto; padding-inline:var(--margin)}
+.wrap-narrow{max-width:760px; margin:0 auto; padding-inline:var(--margin)}
+.wrap-mid{max-width:920px; margin:0 auto; padding-inline:var(--margin)}
+.sec{padding-block:var(--s10)}
+@media(min-width:768px){ .sec{padding-block:var(--s12)} }
+.sec-soft{background:var(--bg-grouped)}
+.sec-white{background:var(--bg)}
+.sec-dark{background:var(--band); color:var(--band-label)}
 .nb{display:none}
 @media(min-width:768px){ .nb{display:block} }
 
-/* before / after cases */
-.cases{margin-top:48px; display:grid; gap:24px}
-@media(min-width:768px){ .cases{grid-template-columns:repeat(2,1fr)} }
-.case{border-radius:16px; background:#fff; overflow:hidden; box-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px var(--n100); transition:transform .2s ease, box-shadow .2s ease}
-.case:hover{transform:translateY(-4px); box-shadow:0 10px 24px -8px rgba(0,0,0,.15), 0 0 0 1px var(--n100)}
-.ba{display:grid; grid-template-columns:1fr 1fr; gap:2px; background:var(--n200)}
-.ba figure{margin:0; position:relative; background:var(--n100)}
-.ba img{width:100%; aspect-ratio:3/4; object-fit:cover; display:block}
-.ba figcaption{position:absolute; left:10px; top:10px; font-family:"Bebas Neue",sans-serif; font-size:13px; letter-spacing:.16em;
-  padding:2px 11px; border-radius:9999px; background:rgba(17,17,17,.78); color:#fff}
-.ba figure.after figcaption{background:var(--red)}
-.case-body{padding:24px}
-.case-body h3{font-size:20px}
-.case-body .meta{margin-top:6px; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--red)}
-.case-body .todo{margin-top:16px; border-radius:10px; border:2px dashed var(--red); background:#FDF4F4; padding:14px 16px; font-size:13px; line-height:1.85; color:var(--red-dark)}
-.disclaimer{margin:24px auto 0; max-width:768px; text-align:center; font-size:12px; line-height:1.95; color:var(--n500)}
+/* ---- section heads ---- */
+.eyebrow{display:block; font-size:.9375rem; font-weight:600; letter-spacing:-.015em; color:var(--red)}
+.sec-dark .eyebrow{color:var(--band-red)}
+.shead{max-width:56ch}
+.shead.center{margin-inline:auto; text-align:center}
+.shead h2{margin-top:var(--s1); font-size:clamp(1.75rem, 5.4vw, 2.75rem); line-height:1.24;
+  font-weight:700; letter-spacing:.012em}
+.sec-dark .shead h2{color:var(--band-label)}
+.shead .sub{margin-top:var(--s2); font-size:1.0625rem; line-height:1.8; color:var(--label-2); max-width:44ch;
+  word-break:auto-phrase; line-break:strict}
+.sec-dark .shead .sub{color:var(--band-label-2)}
+.shead.center .sub{margin-inline:auto}
 
-/* ===== hero with background photo ===== */
-.hero-photo{position:relative; background:#111111; color:#fff; overflow:hidden}
-.hero-photo .bgimg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:72% 22%}
-@media(min-width:768px){ .hero-photo .bgimg{object-position:78% 26%} }
-.hero-photo .scrim{position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(17,17,17,.62) 0%, rgba(17,17,17,.80) 46%, rgba(17,17,17,.96) 100%)}
-@media(min-width:768px){ .hero-photo .scrim{background:linear-gradient(90deg, rgba(17,17,17,.96) 0%, rgba(17,17,17,.90) 38%, rgba(17,17,17,.55) 68%, rgba(17,17,17,.18) 100%)} }
-.hero-photo .inner{position:relative; z-index:1; padding:88px 0 80px; max-width:640px}
-@media(min-width:768px){ .hero-photo .inner{padding:132px 0 124px} }
-.hero-photo .eyebrow{color:#FF5A5A}
-.hero-photo h1{color:#fff; margin-top:24px}
-.hero-photo .lead{color:rgba(255,255,255,.78)}
-.hero-photo .fine{color:rgba(255,255,255,.55)}
-.hero-photo .stats{border-top-color:rgba(255,255,255,.18)}
-.hero-photo .stats .big{color:#FF5A5A}
-.hero-photo .stats .lab{color:rgba(255,255,255,.62)}
-.hero-photo .btn-outline{border-color:rgba(255,255,255,.32); background:transparent; color:#fff}
-.hero-photo .btn-outline:hover{border-color:#fff; background:rgba(255,255,255,.08)}
-.case.wide{grid-column:1/-1}
-.case.wide .ba img{aspect-ratio:4/5}
-@media(min-width:768px){ .case.wide{display:grid; grid-template-columns:1.15fr 1fr; align-items:stretch} .case.wide .ba{height:100%} .case.wide .ba img{height:100%; aspect-ratio:auto; min-height:420px} .case.wide .case-body{display:flex; flex-direction:column; justify-content:center; padding:36px} }
-.case.wide .case-body h3{font-size:26px}
-
-/* coach's own transformation, inside the profile section */
-.own{margin-top:32px; border-radius:16px; background:#fff; overflow:hidden; box-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px var(--n100)}
-@media(min-width:768px){ .own{display:grid; grid-template-columns:1fr 1.05fr; align-items:stretch} }
-.own .ba{height:100%}
-.own .ba img{aspect-ratio:4/5}
-@media(min-width:768px){ .own .ba img{height:100%; aspect-ratio:auto; min-height:440px} }
-.own .own-body{padding:28px; display:flex; flex-direction:column; justify-content:center}
-@media(min-width:768px){ .own .own-body{padding:40px} }
-.own .own-body .eyebrow{margin-bottom:12px}
-.own .own-body h3{font-size:24px; line-height:1.35}
-@media(min-width:768px){ .own .own-body h3{font-size:28px} }
-.own .own-body p{margin-top:18px; font-size:15px; line-height:1.95; color:var(--n700)}
-.own .own-body .todo{margin-top:20px; border-radius:10px; border:2px dashed var(--red); background:#FDF4F4; padding:14px 16px; font-size:13px; line-height:1.85; color:var(--red-dark)}
-
-@media(min-width:1024px){ .steps.three{grid-template-columns:repeat(3,1fr)} }
+/* ---- buttons: 44pt minimum target, accent on the primary action only,
+       never edge to edge — they keep the system margin ---- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:var(--s1);
+  min-height:50px; padding:13px 26px; border-radius:980px;
+  font-size:1.0625rem; font-weight:600; letter-spacing:-.026em; border:1px solid transparent;
+  transition:background-color .18s ease, border-color .18s ease, transform .1s ease;
+}
+.btn:active{transform:scale(.98)}
+.btn-red{background:var(--red); color:var(--on-accent)}
+.btn-red:hover{background:var(--red-press)}
+.btn-outline{border-color:var(--separator); color:var(--label); background:transparent}
+.btn-outline:hover{border-color:var(--label); background:var(--fill)}
+.btn-onDark{border-color:var(--band-separator); color:var(--band-label); background:transparent}
+.btn-onDark:hover{border-color:var(--band-label); background:rgba(255,255,255,.1)}
+.btnrow{display:flex; flex-wrap:wrap; gap:var(--s2); margin-top:var(--s4)}
 .btnrow.center{justify-content:center}
-.reassure{margin:32px auto 0; max-width:820px; display:grid; gap:12px}
-@media(min-width:640px){ .reassure{grid-template-columns:repeat(3,1fr)} }
-.reassure div{border-radius:12px; border:1px solid var(--n200); background:#fff; padding:16px 18px; text-align:center;
-  font-size:14px; font-weight:700; color:var(--ink); box-shadow:0 1px 2px rgba(0,0,0,.05)}
-.reassure div span{display:block; font-family:"Bebas Neue",sans-serif; font-size:17px; letter-spacing:.14em; color:var(--red); margin-bottom:4px}
 
-.case-body .body{margin-top:14px; font-size:14px; line-height:1.95; color:var(--n700)}
+/* ---- icons: stroke weight matched to the text beside them ---- */
+.ic{width:26px; height:26px; flex:none; fill:none; stroke:currentColor; stroke-width:1.6;
+  stroke-linecap:round; stroke-linejoin:round}
+.ic-wrap{display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px;
+  border-radius:12px; background:var(--red-tint); color:var(--red)}
+.ill{width:100%; height:auto; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round}
 
-/* before / after slider */
-.slider{position:relative; max-width:900px; margin:48px auto 0}
+/* ---- hero: artwork runs to the edges, content stays inside the margins ---- */
+.hero{position:relative; background:#000; color:#fff; overflow:hidden}
+.hero .bgimg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:72% 20%}
+@media(min-width:768px){ .hero .bgimg{object-position:80% 26%} }
+.hero .scrim{position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.76) 45%, rgba(0,0,0,.94) 100%)}
+@media(min-width:768px){ .hero .scrim{background:linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.86) 40%, rgba(0,0,0,.45) 72%, rgba(0,0,0,.1) 100%)} }
+.hero .inner{position:relative; z-index:1; padding-block:var(--s10); max-width:620px}
+@media(min-width:768px){ .hero .inner{padding-block:var(--s12)} }
+.hero .kicker{font-size:.9375rem; font-weight:600; line-height:1.7; letter-spacing:-.015em;
+  color:rgba(255,255,255,.88); border-left:3px solid var(--red); padding-left:13px}
+@media(min-width:768px){ .hero .kicker{font-size:1.0625rem; letter-spacing:-.026em} }
+.hero h1{margin-top:var(--s3); color:#fff; font-size:clamp(2.125rem, 8.6vw, 4.25rem); line-height:1.1;
+  font-weight:700; letter-spacing:.008em}
+.hero .lead{margin-top:var(--s3); font-size:1.125rem; line-height:1.78; letter-spacing:-.025em;
+  color:rgba(255,255,255,.84); max-width:34ch; word-break:auto-phrase}
+.hero .fine{margin-top:var(--s2); font-size:.9375rem; line-height:1.75; letter-spacing:-.015em;
+  color:rgba(255,255,255,.66); max-width:36ch}
+.hero .btn-outline{border-color:rgba(255,255,255,.36); color:#fff}
+.hero .btn-outline:hover{border-color:#fff; background:rgba(255,255,255,.1)}
+.stats{margin-top:var(--s6); padding-top:var(--s3); border-top:1px solid rgba(255,255,255,.22);
+  display:grid; grid-template-columns:repeat(3,1fr); gap:var(--s2)}
+.stats .big{font-size:1.75rem; font-weight:700; letter-spacing:.014em; color:#fff; line-height:1.15;
+  font-variant-numeric:tabular-nums}
+@media(min-width:768px){ .stats .big{font-size:2.125rem; letter-spacing:.012em} }
+.stats .lab{margin-top:4px; font-size:.8125rem; line-height:1.5; letter-spacing:-.006em; color:rgba(255,255,255,.7)}
+
+/* ---- grouped inset list (the iOS list idiom) ---- */
+.checks{list-style:none; margin:var(--s5) 0 0; padding:0; background:var(--card); border-radius:16px;
+  box-shadow:var(--card-shadow); overflow:hidden}
+@media(min-width:900px){ .checks{display:grid; grid-template-columns:1fr 1fr} }
+.checks li{display:flex; align-items:center; gap:var(--s2); padding:14px 16px; min-height:56px;
+  font-size:1rem; line-height:1.6; letter-spacing:-.019em; border-bottom:1px solid var(--separator)}
+@media(min-width:768px){ .checks li{padding:16px 20px; font-size:1.0625rem; letter-spacing:-.026em} }
+@media(min-width:900px){
+  .checks li:nth-child(odd){border-right:1px solid var(--separator)}
+  .checks li:last-child{grid-column:1/-1; border-right:0}
+}
+.checks li:last-child{border-bottom:0}
+.checks .ic-wrap{width:36px; height:36px; border-radius:10px}
+.checks .ic{width:21px; height:21px}
+
+.turn{margin-top:var(--s7); padding-top:var(--s5); border-top:2px solid var(--red)}
+.turn .big{font-size:clamp(1.375rem, 4.2vw, 2.125rem); line-height:1.5; font-weight:700; letter-spacing:.006em;
+  word-break:auto-phrase; line-break:strict}
+.turn .big em{font-style:normal; color:var(--red)}
+.turn .body-p{margin-top:var(--s3); font-size:1.0625rem; line-height:1.85; color:var(--label-2); max-width:44ch}
+
+/* ---- belief band ---- */
+.belief{display:grid; gap:var(--s4)}
+@media(min-width:900px){ .belief{grid-template-columns:1fr 1.1fr; gap:var(--s8); align-items:start} }
+.belief h2{margin-top:var(--s1); color:var(--band-label); font-size:clamp(1.875rem, 6vw, 3.25rem);
+  line-height:1.18; font-weight:700; letter-spacing:.01em}
+.belief-body{display:flex; flex-direction:column; gap:var(--s3); max-width:44ch}
+.belief-body p{font-size:1.0625rem; line-height:1.9; color:var(--band-label-2)}
+.belief-body p:first-child{font-size:1.1875rem; color:var(--band-label)}
+
+/* ---- growth stages ---- */
+.stages{list-style:none; margin:var(--s6) 0 0; padding:0; display:grid; gap:var(--s2)}
+@media(min-width:680px){ .stages{grid-template-columns:repeat(2,1fr)} }
+@media(min-width:1024px){ .stages{grid-template-columns:repeat(4,1fr)} }
+.stages li{background:var(--card); border-radius:16px; padding:var(--s3); box-shadow:var(--card-shadow);
+  display:flex; flex-direction:column}
+.stages .art{color:var(--red); width:100%; max-width:124px; margin-bottom:var(--s2)}
+.stages .st{font-size:.8125rem; font-weight:600; letter-spacing:.04em; color:var(--label-2);
+  font-variant-numeric:tabular-nums}
+.stages h3{margin-top:6px; font-size:1.25rem; font-weight:600; letter-spacing:-.023em}
+.stages p{margin-top:var(--s1); font-size:.9375rem; line-height:1.8; letter-spacing:-.015em; color:var(--label-2)}
+.goal{margin-top:var(--s5); font-size:clamp(1.1875rem, 3.2vw, 1.625rem); line-height:1.6; font-weight:600;
+  letter-spacing:-.012em; word-break:auto-phrase; line-break:strict}
+.goal strong{color:var(--red); font-weight:700}
+
+/* ---- the plan fits the person ---- */
+.fit{margin-top:var(--s5); border-radius:20px; background:var(--band); color:var(--band-label); padding:var(--s4)}
+@media(min-width:768px){ .fit{padding:var(--s5) var(--s6)} }
+.fit-h{font-size:.9375rem; font-weight:600; letter-spacing:-.015em; color:var(--band-red)}
+.chips{list-style:none; margin:var(--s2) 0 0; padding:0; display:flex; flex-wrap:wrap; gap:var(--s1)}
+.chips li{font-size:.9375rem; line-height:1.4; letter-spacing:-.015em; padding:9px 16px; border-radius:980px;
+  border:1px solid var(--band-separator)}
+.fit-p{margin-top:var(--s3); font-size:1rem; line-height:1.85; letter-spacing:-.019em;
+  color:var(--band-label-2); max-width:46ch}
+
+/* ---- cards ---- */
+.cards{margin-top:var(--s5); display:grid; gap:var(--s2)}
+@media(min-width:680px){ .cards{grid-template-columns:repeat(2,1fr)} }
+@media(min-width:1024px){ .cards{grid-template-columns:repeat(3,1fr)} }
+.card{background:var(--card); border-radius:16px; padding:var(--s3); box-shadow:var(--card-shadow)}
+.card h3{margin-top:var(--s2); font-size:1.1875rem; line-height:1.45; font-weight:600; letter-spacing:-.023em}
+.card p{margin-top:var(--s1); font-size:.9375rem; line-height:1.85; letter-spacing:-.015em; color:var(--label-2)}
+
+/* ---- students ---- */
+.slider{position:relative; max-width:900px; margin:var(--s5) auto 0}
 .sl-track{display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth;
-  border-radius:16px; background:#fff; box-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px var(--n100);
+  -webkit-overflow-scrolling:touch; border-radius:16px; background:var(--card); box-shadow:var(--card-shadow);
   scrollbar-width:none; -ms-overflow-style:none}
 .sl-track::-webkit-scrollbar{display:none}
 .slide{flex:0 0 100%; scroll-snap-align:center; min-width:0}
-.slide-head{padding:22px 24px 16px}
-.slide-head h3{font-size:22px}
-.sl-arrow{position:absolute; top:50%; transform:translateY(-50%); z-index:2; width:48px; height:48px;
-  border-radius:9999px; border:1px solid var(--n200); background:#fff; color:var(--ink);
-  font-family:"Noto Sans JP",sans-serif; font-size:22px; line-height:1; cursor:pointer;
-  box-shadow:0 2px 12px rgba(0,0,0,.14); display:flex; align-items:center; justify-content:center;
-  transition:background-color .16s ease, color .16s ease, border-color .16s ease}
-.sl-arrow:hover{background:var(--red); color:#fff; border-color:var(--red)}
-.sl-arrow.prev{left:-22px} .sl-arrow.next{right:-22px}
-@media(max-width:1000px){ .sl-arrow.prev{left:8px} .sl-arrow.next{right:8px} }
-.sl-foot{display:flex; align-items:center; justify-content:center; gap:22px; margin-top:22px; flex-wrap:wrap}
-.dots{display:flex; gap:8px}
-.dots button{width:9px; height:9px; border-radius:9999px; border:0; background:var(--n300); cursor:pointer; padding:0;
+.slide-head{padding:var(--s3) var(--s3) var(--s2)}
+.slide-head h3{font-size:1.375rem; font-weight:700; letter-spacing:-.012em}
+.ba{display:grid; grid-template-columns:1fr 1fr; gap:2px; background:var(--separator)}
+.ba figure{margin:0; position:relative; background:var(--fill)}
+.ba img{width:100%; aspect-ratio:3/4; object-fit:cover}
+.ba figcaption{position:absolute; left:10px; top:10px; font-size:.75rem; font-weight:600; letter-spacing:.02em;
+  padding:4px 11px; border-radius:980px; background:rgba(0,0,0,.72); color:#fff}
+.ba figure.after figcaption{background:var(--red); color:var(--on-accent)}
+.sl-arrow{position:absolute; top:50%; transform:translateY(-50%); z-index:2; width:44px; height:44px;
+  border-radius:980px; border:1px solid var(--separator); background:var(--card); color:var(--label);
+  font-size:1.375rem; line-height:1; cursor:pointer; box-shadow:0 2px 12px rgba(0,0,0,.16);
+  display:flex; align-items:center; justify-content:center; font-family:inherit}
+.sl-arrow:hover{background:var(--red); color:var(--on-accent); border-color:var(--red)}
+.sl-arrow.prev{left:-18px} .sl-arrow.next{right:-18px}
+@media(max-width:980px){ .sl-arrow.prev{left:8px} .sl-arrow.next{right:8px} }
+.sl-foot{display:flex; align-items:center; justify-content:center; gap:var(--s3); margin-top:var(--s2); flex-wrap:wrap}
+.dots{display:flex; gap:2px}
+.dots button{width:22px; height:44px; padding:0; border:0; background:none; cursor:pointer;
+  display:flex; align-items:center; justify-content:center}
+.dots button::before{content:""; width:9px; height:9px; border-radius:980px; background:var(--label-3);
   transition:width .2s ease, background-color .2s ease}
-.dots button[aria-current="true"]{background:var(--red); width:24px}
-.sl-count{font-family:"Bebas Neue",sans-serif; font-size:17px; letter-spacing:.14em; color:var(--n500)}
-/* scroll reveal */
-.rv{transform:translateY(14px); transition:transform .6s ease}
-.rv.in{opacity:1; transform:none}
-@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .rv{opacity:1; transform:none; transition:none} .card:hover{transform:none} }
+.dots button[aria-current="true"]{width:36px}
+.dots button[aria-current="true"]::before{width:24px; background:var(--red)}
+.sl-count{font-size:.9375rem; letter-spacing:-.015em; color:var(--label-2); font-variant-numeric:tabular-nums}
+.disclaimer{margin:var(--s3) auto 0; max-width:60ch; text-align:center; font-size:.8125rem; line-height:1.8;
+  letter-spacing:-.006em; color:var(--label-2)}
 
-.legal{-webkit-text-size-adjust:100%}
-.legal{margin:0; background:var(--white); color:var(--ink);
-  font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",system-ui,sans-serif;
-  font-size:16px; line-height:1.9; -webkit-font-smoothing:antialiased}
-.legal a{color:var(--red-dark); text-underline-offset:3px}
-.legal :focus-visible{outline:2px solid var(--red); outline-offset:3px; border-radius:6px}
-.legal h1, .legal h2{margin:0; font-family:"Noto Serif JP",serif; font-weight:700; text-wrap:balance}
-.legal p{margin:0}
-.legal .wrap{max-width:860px; margin:0 auto; padding:0 20px}
-@media(min-width:768px){.legal .wrap{padding:0 40px}}
-.legal .top{background:var(--night); color:#fff}
-.legal .top .wrap{padding:64px 20px 56px}
-@media(min-width:768px){.legal .top .wrap{padding:88px 40px 72px}}
-.legal .eyebrow{display:block; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.25em; color:#FF5A5A; margin-bottom:18px}
-.legal .top h1{color:#fff; font-size:28px; line-height:1.35}
-@media(min-width:768px){.legal .top h1{font-size:40px; line-height:1.28}}
-.legal .top p{margin-top:20px; color:rgba(255,255,255,.72); font-size:15px; max-width:42em}
-.legal .legalmain{padding:56px 0 24px}
-@media(min-width:768px){.legal .legalmain{padding:72px 0 32px}}
-.legal dl{margin:0; border-top:1px solid var(--n200)}
-.legal dl > div{display:grid; grid-template-columns:1fr; gap:2px 28px; padding:20px 0; border-bottom:1px solid var(--n200)}
-@media(min-width:720px){.legal dl > div{grid-template-columns:240px 1fr; gap:0 32px; padding:22px 0}}
-.legal dt{font-weight:700; font-size:15px; color:var(--ink)}
-.legal dd{margin:0; font-size:15px; line-height:1.95; color:var(--n700)}
-.legal dd .sub{display:block; margin-top:8px; font-size:13.5px; color:var(--n500); line-height:1.85}
-.legal dd ul{margin:6px 0 0; padding-left:1.3em}
-.legal dd li{margin-bottom:5px}
-.legal .note{margin-top:40px; border-radius:16px; background:var(--soft); border-left:4px solid var(--red); padding:22px 24px}
-.legal .note h2{font-size:17px; margin-bottom:10px}
-.legal .note p{font-size:14.5px; line-height:1.95; color:var(--n700)}
-.legal .note p + p{margin-top:10px}
-.legal .todo{margin-top:24px; border-radius:16px; border:2px dashed var(--red); background:#FDF4F4; padding:22px 24px; color:var(--red-dark)}
-.legal .todo h2{font-size:16px; margin-bottom:10px; color:var(--red-dark)}
-.legal .todo p{font-size:14.5px; line-height:1.95}
-.legal .todo ul{margin:10px 0 0; padding-left:1.3em; font-size:14.5px; line-height:1.95}
-.legal .todo li{margin-bottom:7px}
-.legal footer{margin-top:56px; background:var(--night); color:rgba(255,255,255,.6); padding:36px 0; font-size:13px; line-height:1.9}
-.legal footer .brandline{font-family:"Bebas Neue",sans-serif; font-size:20px; letter-spacing:.18em; color:#fff; margin-bottom:8px}
-.legal footer a{color:#FF6B6B}
-.legal .legalmain section{margin-top:44px}
-.legal .legalmain section:first-of-type{margin-top:0}
-.legal .legalmain h2{font-size:20px; line-height:1.5; padding-bottom:12px; border-bottom:2px solid var(--ink)}
-@media(min-width:768px){.legal .legalmain h2{font-size:22px}}
-.legal .legalmain section > p{margin-top:18px; font-size:15px; line-height:1.95; color:var(--n700)}
-.legal .legalmain section > p + p{margin-top:12px}
-.legal .legalmain ul, .legal .legalmain ol{margin:16px 0 0; padding-left:1.4em; font-size:15px; line-height:1.95; color:var(--n700)}
-.legal .legalmain li{margin-bottom:8px}
-.legal .legalmain li strong{color:var(--ink)}
-.legal .tbl{margin-top:18px; border-top:1px solid var(--n200)}
-.legal .tbl > div{display:grid; grid-template-columns:1fr; gap:2px 28px; padding:16px 0; border-bottom:1px solid var(--n200)}
-@media(min-width:720px){.legal .tbl > div{grid-template-columns:200px 1fr; gap:0 32px}}
-.legal .tbl b{font-weight:700; font-size:14.5px; color:var(--ink)}
-.legal .tbl span{font-size:14.5px; line-height:1.95; color:var(--n700)}
-.legal .hl{margin-top:20px; border-radius:16px; background:var(--soft); border-left:4px solid var(--red); padding:20px 24px}
-.legal .hl p{font-size:14.5px; line-height:1.95; color:var(--n700); margin:0}
-.legal .hl p + p{margin-top:10px}
-.legal .rev{margin-top:44px; padding-top:20px; border-top:1px solid var(--n200); font-size:13.5px; color:var(--n500); line-height:1.9}
-.legal .wrap{max-width:860px}
+/* ---- story ---- */
+.bio{display:grid; gap:var(--s4); align-items:start; margin-top:var(--s5)}
+@media(min-width:840px){ .bio{grid-template-columns:0.8fr 1.2fr; gap:var(--s6)} }
+.bio .stack{display:grid; gap:var(--s2)}
+.photo{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:20px; background:var(--fill)}
+.story-body{display:flex; flex-direction:column; gap:var(--s2); max-width:46ch}
+.story-body .txt{font-size:1.0625rem; line-height:1.95; color:var(--label-2)}
+.story-body .say{margin-block:var(--s1); font-size:clamp(1.25rem, 3.4vw, 1.625rem); line-height:1.55;
+  font-weight:700; letter-spacing:-.012em; color:var(--label); border-left:4px solid var(--red); padding-left:18px}
+.own{margin-top:var(--s4); background:var(--card); border-radius:20px; overflow:hidden; box-shadow:var(--card-shadow)}
+@media(min-width:840px){ .own{display:grid; grid-template-columns:1fr 1.05fr; align-items:stretch} }
+.own .ba img{aspect-ratio:4/5}
+@media(min-width:840px){ .own .ba{height:100%} .own .ba img{height:100%; aspect-ratio:auto; min-height:430px} }
+.own-body{padding:var(--s3); display:flex; flex-direction:column; justify-content:center}
+@media(min-width:768px){ .own-body{padding:var(--s5)} }
+.own-body h3{margin-top:var(--s1); font-size:clamp(1.375rem, 3.4vw, 1.75rem); line-height:1.35; font-weight:700;
+  letter-spacing:-.012em}
+.own-body p{margin-top:var(--s2); font-size:1rem; line-height:1.9; letter-spacing:-.019em; color:var(--label-2)}
+.own-body strong{color:var(--label); font-weight:600}
+.creds{margin-top:var(--s2); background:var(--card); border-radius:20px; padding:var(--s3);
+  box-shadow:var(--card-shadow); display:grid; gap:var(--s3)}
+@media(min-width:840px){ .creds{grid-template-columns:0.7fr 1.3fr; gap:var(--s5); padding:var(--s5)} }
+.creds .role{font-size:.9375rem; font-weight:600; letter-spacing:-.015em; color:var(--red)}
+.creds h3{margin-top:4px; font-size:1.375rem; font-weight:700; letter-spacing:-.012em}
+.creds .romaji{margin-top:2px; font-size:.8125rem; letter-spacing:.12em; color:var(--label-2)}
+.cred{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:var(--s1)}
+.cred li{font-size:.8125rem; line-height:1.5; letter-spacing:-.006em; padding:7px 14px; border-radius:980px;
+  background:var(--fill); color:var(--label-2)}
+.cred li.hi{background:var(--red); color:var(--on-accent)}
+.creds .txt{margin-top:var(--s2); font-size:1rem; line-height:1.9; letter-spacing:-.019em; color:var(--label-2)}
 
+/* ---- consultation ---- */
+.flow{margin-top:var(--s5); display:grid; gap:var(--s4); align-items:center}
+@media(min-width:900px){ .flow{grid-template-columns:1.15fr .85fr; gap:var(--s7)} }
+.steps{display:grid; gap:var(--s2)}
+.step{display:flex; gap:var(--s2); align-items:flex-start; background:var(--card); border-radius:16px;
+  padding:var(--s3); box-shadow:var(--card-shadow)}
+.step .n{flex:none; width:32px; height:32px; border-radius:980px; background:var(--red); color:var(--on-accent);
+  display:flex; align-items:center; justify-content:center; font-size:.9375rem; font-weight:700;
+  font-variant-numeric:tabular-nums}
+.step h3{font-size:1.0625rem; font-weight:600; letter-spacing:-.026em}
+.step p{margin-top:4px; font-size:.9375rem; line-height:1.8; letter-spacing:-.015em; color:var(--label-2)}
+.phone{color:var(--red); max-width:300px; margin-inline:auto; width:100%}
+.pricebox{margin:var(--s4) auto 0; max-width:820px; border-radius:16px; background:var(--fill); padding:var(--s3)}
+.pricebox .pt{font-size:.9375rem; font-weight:600; letter-spacing:-.015em; color:var(--red)}
+.pricebox p{margin-top:var(--s1); font-size:.9375rem; line-height:1.9; letter-spacing:-.015em; color:var(--label-2)}
+.pricebox .pl a{color:var(--red); text-decoration:underline; text-underline-offset:3px}
+.reassure{margin:var(--s3) auto 0; max-width:820px; display:grid; gap:var(--s1)}
+@media(min-width:640px){ .reassure{grid-template-columns:repeat(3,1fr)} }
+.reassure div{border-radius:14px; background:var(--card); box-shadow:var(--card-shadow); padding:var(--s2);
+  text-align:center; font-size:.9375rem; font-weight:600; letter-spacing:-.015em}
+.reassure span{display:block; font-size:.75rem; font-weight:600; letter-spacing:.04em; color:var(--red); margin-bottom:4px}
 
-/* ===== site chrome: header / nav / router / footer ===== */
-html{scroll-padding-top:72px}
+/* ---- FAQ ---- */
+.faq{margin-top:var(--s5); background:var(--card); border-radius:16px; box-shadow:var(--card-shadow); overflow:hidden}
+.faq details{border-bottom:1px solid var(--separator)}
+.faq details:last-child{border-bottom:0}
+.faq summary{display:flex; gap:var(--s2); align-items:center; justify-content:space-between; cursor:pointer;
+  list-style:none; padding:var(--s2); min-height:56px; font-size:1.0625rem; font-weight:600;
+  letter-spacing:-.026em; line-height:1.55}
+@media(min-width:768px){ .faq summary{padding:18px 22px} }
+.faq summary::-webkit-details-marker{display:none}
+.faq .plus{flex:none; width:22px; height:22px; color:var(--red); transition:transform .2s ease}
+.faq details[open] .plus{transform:rotate(45deg)}
+.faq details p{padding:0 var(--s2) var(--s3); font-size:1rem; line-height:1.9; letter-spacing:-.019em;
+  color:var(--label-2)}
+@media(min-width:768px){ .faq details p{padding:0 22px var(--s3)} }
+.faq details p + p{padding-top:0; margin-top:-8px}
+.faq .src a{color:var(--red); text-decoration:underline; text-underline-offset:3px}
+
+/* ---- closing ---- */
+.ctabox{text-align:center}
+.ctabox h2{font-size:clamp(1.75rem, 5.6vw, 2.875rem); line-height:1.25; font-weight:700; letter-spacing:.01em;
+  color:var(--band-label)}
+.ctabox .p{margin:var(--s3) auto 0; max-width:44ch; font-size:1.0625rem; line-height:1.85; color:var(--band-label-2)}
+.ctabox .btnrow{margin-top:var(--s4); justify-content:center}
+
+/* ---- chrome: the bar stays clear over the hero and takes on the
+       material only once content scrolls under it (scroll edge effect) ---- */
 .route{display:none}
 .route.on{display:block}
-
-.sitehead{position:sticky; top:env(safe-area-inset-top, 0px); z-index:50; background:rgba(255,255,255,.94);
-  backdrop-filter:saturate(180%) blur(12px); -webkit-backdrop-filter:saturate(180%) blur(12px);
-  border-bottom:1px solid var(--n200)}
-.sitehead .bar{max-width:1280px; margin:0 auto; padding:0 20px; height:64px; display:flex; align-items:center; gap:20px}
-@media(min-width:768px){ .sitehead .bar{padding:0 40px; height:72px} }
-.brand{display:flex; align-items:baseline; gap:9px; text-decoration:none; white-space:nowrap; margin-right:auto}
-.brand b{font-family:"Bebas Neue",sans-serif; font-size:24px; letter-spacing:.16em; color:var(--ink); font-weight:400}
-.brand span{font-size:10.5px; letter-spacing:.18em; color:var(--red); font-weight:700; text-transform:uppercase}
-@media(max-width:420px){ .brand span{display:none} }
-
-.navlinks{display:none; align-items:center; gap:26px}
-@media(min-width:900px){ .navlinks{display:flex} }
-.navlinks a{font-size:14px; font-weight:700; text-decoration:none; color:var(--n600); padding:6px 0;
-  border-bottom:2px solid transparent; transition:color .16s ease, border-color .16s ease}
-.navlinks a:hover{color:var(--ink)}
-.navlinks a.active{color:var(--ink); border-bottom-color:var(--red)}
-
-.navcta{display:none}
-@media(min-width:768px){ .navcta{display:inline-flex; padding:10px 20px; font-size:13px} }
-
-.menubtn{display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; padding:0;
-  border:1px solid var(--n200); border-radius:9999px; background:#fff; cursor:pointer; color:var(--ink)}
-@media(min-width:900px){ .menubtn{display:none} }
-.menubtn span{display:block; width:16px; height:2px; background:currentColor; position:relative}
-.menubtn span::before,.menubtn span::after{content:""; position:absolute; left:0; width:16px; height:2px; background:currentColor}
-.menubtn span::before{top:-5px} .menubtn span::after{top:5px}
-
-.drawer{display:none; border-top:1px solid var(--n200); background:#fff}
-.drawer.open{display:block}
-@media(min-width:900px){ .drawer{display:none !important} }
-.drawer .inner{max-width:1280px; margin:0 auto; padding:14px 20px 20px; display:flex; flex-direction:column; gap:2px}
-.drawer a{padding:12px 0; font-size:15px; font-weight:700; text-decoration:none; color:var(--n700); border-bottom:1px solid var(--n100)}
-.drawer a.active{color:var(--red)}
-.drawer a:last-child{border-bottom:0}
-
-.sitefoot{background:var(--night); color:rgba(255,255,255,.6); padding:48px 0 40px; font-size:13px; line-height:1.9}
-.sitefoot .wrap{max-width:1280px; margin:0 auto; padding:0 20px}
-@media(min-width:768px){ .sitefoot .wrap{padding:0 40px} }
-.sitefoot .cols{display:grid; gap:28px}
-@media(min-width:720px){ .sitefoot .cols{grid-template-columns:1.4fr 1fr 1fr} }
-.sitefoot .brandline{font-family:"Bebas Neue",sans-serif; font-size:20px; letter-spacing:.18em; color:#fff; margin-bottom:10px}
-.sitefoot h4{margin:0 0 12px; font-family:"Noto Sans JP",sans-serif; font-size:11px; font-weight:700;
-  letter-spacing:.18em; text-transform:uppercase; color:#FF6B6B}
-.sitefoot nav{display:flex; flex-direction:column; gap:9px}
-.sitefoot nav a{color:rgba(255,255,255,.75); text-decoration:none; font-size:13.5px}
-.sitefoot nav a:hover{color:#fff; text-decoration:underline; text-underline-offset:3px}
-.sitefoot .legalnote{margin-top:32px; padding-top:22px; border-top:1px solid rgba(255,255,255,.12); font-size:12px; line-height:1.9; color:rgba(255,255,255,.5)}
-
-
-/* ===== repositioning: "今度こそ、平均以上の身体へ" ===== */
-body{background:var(--white)}
-.card h3:first-child{margin-top:0}
-
-/* hero kicker: a sentence, not an uppercase label */
-.hero-photo .kicker{font-size:15px; line-height:1.8; font-weight:700; color:rgba(255,255,255,.88);
-  border-left:3px solid var(--red); padding-left:14px; max-width:30em}
-@media(min-width:768px){ .hero-photo .kicker{font-size:17px} }
-.hero-photo h1{margin-top:20px}
-
-/* empathy checklist */
-.checks{list-style:none; margin:40px 0 0; padding:0; display:grid; border-top:1px solid var(--n200)}
-@media(min-width:768px){ .checks{grid-template-columns:1fr 1fr; column-gap:48px} }
-.checks li{display:flex; align-items:flex-start; gap:14px; padding:18px 0; border-bottom:1px solid var(--n200);
-  font-size:16px; line-height:1.7; color:var(--ink)}
-.checks li::before{content:""; flex:none; width:22px; height:22px; margin-top:2px; border-radius:6px;
-  border:2px solid var(--red)}
-.checks li{position:relative}
-.checks li::after{content:""; position:absolute; left:8px; top:23px; width:6px; height:11px;
-  border:solid var(--red); border-width:0 2.5px 2.5px 0; transform:rotate(45deg)}
-.checks li.wide{grid-column:1/-1}
-
-.turn{margin-top:56px; padding-top:40px; border-top:2px solid var(--ink)}
-.turn .big{font-family:"Noto Serif JP",serif; font-weight:700; font-size:23px; line-height:1.6; color:var(--ink); text-wrap:balance}
-@media(min-width:768px){ .turn .big{font-size:32px; line-height:1.5} }
-.turn .big em{font-style:normal; background:linear-gradient(transparent 60%, rgba(204,31,31,.16) 60%)}
-.turn .body-p{margin-top:24px}
-
-/* belief band */
-.belief{position:relative; display:grid; gap:32px}
-@media(min-width:900px){ .belief{grid-template-columns:1fr 1.15fr; gap:72px; align-items:start} }
-.belief h2{margin-top:16px; color:#fff; font-size:34px; line-height:1.3}
-@media(min-width:768px){ .belief h2{font-size:52px; line-height:1.2} }
-.belief-body{display:flex; flex-direction:column; gap:20px; max-width:36em}
-.belief-body p{font-size:16px; line-height:1.95; color:rgba(255,255,255,.78)}
-.belief-body p:first-child{font-size:18px; color:#fff; font-weight:500}
-
-/* growth stages: a real sequence */
-.stages{list-style:none; margin:56px 0 0; padding:0; display:grid; gap:0; counter-reset:none}
-@media(min-width:768px){ .stages{grid-template-columns:repeat(2,1fr); gap:0 32px} }
-@media(min-width:1024px){ .stages{grid-template-columns:repeat(4,1fr)} }
-.stages li{position:relative; padding:28px 0 28px 28px; border-left:2px solid var(--n200)}
-.stages li::before{content:""; position:absolute; left:-7px; top:34px; width:12px; height:12px; border-radius:50%;
-  background:var(--white); border:2px solid var(--red)}
-.stages li:last-child::before{background:var(--red)}
-@media(min-width:1024px){
-  .stages li{padding:36px 0 0; border-left:0; border-top:2px solid var(--n200)}
-  .stages li::before{left:0; top:-7px}
-  .stages li:last-child{border-top-color:var(--red)}
+.sitehead{position:sticky; top:0; z-index:50; padding-top:env(safe-area-inset-top, 0px);
+  background:transparent; border-bottom:1px solid transparent;
+  transition:background-color .25s ease, border-color .25s ease}
+.sitehead.edge{
+  background:color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter:saturate(180%) blur(20px); -webkit-backdrop-filter:saturate(180%) blur(20px);
+  border-bottom-color:var(--separator);
 }
-.stages .st{font-family:"Bebas Neue",sans-serif; font-size:15px; letter-spacing:.18em; color:var(--red)}
-.stages h3{margin-top:8px; font-size:22px}
-.stages p{margin-top:12px; font-size:14.5px; line-height:1.9; color:var(--n700); max-width:24em}
-.goal{margin-top:56px; font-family:"Noto Serif JP",serif; font-size:19px; line-height:1.8; color:var(--ink); text-wrap:balance}
-@media(min-width:768px){ .goal{font-size:24px} }
-.goal strong{color:var(--red-dark)}
+.sitehead .bar{max-width:var(--maxw); margin:0 auto; padding-inline:var(--margin); height:56px;
+  display:flex; align-items:center; gap:var(--s3)}
+.brand{display:flex; align-items:center; gap:var(--s1); margin-right:auto; white-space:nowrap; min-height:44px}
+.brand b{font-family:"Bebas Neue",-apple-system,sans-serif; font-size:1.4375rem; font-weight:400; letter-spacing:.14em}
+.brand span{font-size:.6875rem; font-weight:500; letter-spacing:.1em; color:var(--red); text-transform:uppercase}
+@media(max-width:420px){ .brand span{display:none} }
+.navlinks{display:none; align-items:center; gap:var(--s3)}
+@media(min-width:960px){ .navlinks{display:flex} }
+.navlinks a{font-size:.9375rem; letter-spacing:-.015em; color:var(--label-2); display:flex; align-items:center;
+  min-height:44px; padding-inline:4px; white-space:nowrap}
+.navlinks a:hover{color:var(--label)}
+.navlinks a.active{color:var(--red)}
+.navcta{display:none}
+@media(min-width:768px){ .navcta{display:inline-flex; min-height:44px; padding:10px 18px; font-size:.9375rem;
+  letter-spacing:-.015em} }
+.menubtn{display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; padding:0;
+  border:0; border-radius:980px; background:var(--fill); color:var(--label); cursor:pointer}
+@media(min-width:960px){ .menubtn{display:none} }
+.menubtn svg{width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round}
+.drawer{display:none; border-top:1px solid var(--separator); background:var(--bg)}
+.drawer.open{display:block}
+@media(min-width:960px){ .drawer{display:none !important} }
+.drawer .inner{max-width:var(--maxw); margin:0 auto; padding:var(--s1) var(--margin) var(--s2);
+  display:flex; flex-direction:column}
+.drawer a{padding:12px 0; font-size:1.0625rem; font-weight:500; letter-spacing:-.026em; color:var(--label);
+  border-bottom:1px solid var(--separator); min-height:52px; display:flex; align-items:center}
+.drawer a:last-child{border-bottom:0; color:var(--red); font-weight:600}
 
-/* "plan fits the person" */
-.fit{margin-top:48px; border-radius:24px; background:var(--night); color:#fff; padding:32px}
-@media(min-width:768px){ .fit{padding:40px 48px} }
-.fit-h{font-size:12px; font-weight:700; letter-spacing:.2em; color:#FF6B6B}
-.chips{list-style:none; margin:18px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:10px}
-.chips li{font-size:14px; line-height:1.5; padding:8px 16px; border-radius:9999px; border:1px solid rgba(255,255,255,.22); color:#fff}
-.fit-p{margin-top:24px; font-size:15.5px; line-height:1.9; color:rgba(255,255,255,.75); max-width:40em}
+.sitefoot{background:var(--bg-grouped); color:var(--label-2); padding-block:var(--s6);
+  padding-bottom:calc(var(--s6) + env(safe-area-inset-bottom, 0px)); border-top:1px solid var(--separator);
+  font-size:.9375rem; line-height:1.85; letter-spacing:-.015em}
+.sitefoot .wrap{max-width:var(--maxw)}
+.sitefoot .cols{display:grid; gap:var(--s4)}
+@media(min-width:720px){ .sitefoot .cols{grid-template-columns:1.4fr 1fr 1fr} }
+.sitefoot .brandline{font-family:"Bebas Neue",-apple-system,sans-serif; font-size:1.1875rem; letter-spacing:.16em;
+  color:var(--label); margin-bottom:var(--s1)}
+.sitefoot h4{margin:0 0 var(--s1); font-size:.8125rem; font-weight:600; letter-spacing:-.006em; color:var(--label)}
+.sitefoot nav{display:flex; flex-direction:column}
+.sitefoot nav a{padding:6px 0; min-height:40px; display:flex; align-items:center; color:var(--label-2)}
+.sitefoot nav a:hover{color:var(--red)}
+.sitefoot .legalnote{margin-top:var(--s4); padding-top:var(--s3); border-top:1px solid var(--separator);
+  font-size:.8125rem; line-height:1.85; letter-spacing:-.006em}
 
-/* story */
-.story{margin-top:48px}
-@media(min-width:768px){ .story{grid-template-columns:0.75fr 1.25fr} }
-.story-body{display:flex; flex-direction:column; gap:18px; max-width:38em}
-.story-body .txt{margin:0; font-size:16px; line-height:2; color:var(--n700)}
-.story-body .say{margin:8px 0; font-family:"Noto Serif JP",serif; font-weight:700; font-size:21px; line-height:1.7;
-  border-left:4px solid var(--red); padding-left:20px; color:var(--ink)}
-@media(min-width:768px){ .story-body .say{font-size:25px} }
-.creds{margin-top:32px; display:grid; gap:20px}
-@media(min-width:900px){ .creds{grid-template-columns:0.7fr 1.3fr; gap:40px; align-items:start} }
-.creds .cred{margin-top:0}
-.creds .txt{margin-top:18px}
+/* ---- legal pages ---- */
+.legal .top{background:var(--band); color:var(--band-label)}
+.legal .top .wrap{padding-block:var(--s8) var(--s7); max-width:820px}
+.legal .top .eyebrow{color:var(--band-red); margin-bottom:var(--s2)}
+.legal .top h1{color:var(--band-label); font-size:clamp(1.75rem, 5.2vw, 2.625rem); line-height:1.25;
+  font-weight:700; letter-spacing:.012em}
+.legal .top p{margin-top:var(--s2); color:var(--band-label-2); font-size:1rem; max-width:46ch}
+.legal .legalmain{padding-block:var(--s6) var(--s1)}
+.legal .legalmain .wrap{max-width:820px}
+.legal dl{margin:0; background:var(--card); border-radius:16px; box-shadow:var(--card-shadow); overflow:hidden}
+.legal dl > div{display:grid; gap:4px var(--s4); padding:var(--s2); border-bottom:1px solid var(--separator)}
+@media(min-width:720px){ .legal dl > div{grid-template-columns:230px 1fr; gap:0 var(--s4); padding:20px 22px} }
+.legal dl > div:last-child{border-bottom:0}
+.legal dt{font-weight:600; font-size:1rem; letter-spacing:-.019em; color:var(--label)}
+.legal dd{margin:0; font-size:1rem; line-height:1.9; letter-spacing:-.019em; color:var(--label-2)}
+.legal dd .sub{display:block; margin-top:6px; font-size:.8125rem; letter-spacing:-.006em}
+.legal dd ul{margin:6px 0 0; padding-left:1.2em}
+.legal dd li{margin-bottom:4px}
+.legal a{color:var(--red); text-decoration:underline; text-underline-offset:3px}
+.legal .note,.legal .hl{margin-top:var(--s3); border-radius:16px; background:var(--fill); padding:var(--s3)}
+.legal .note h2{font-size:1.0625rem; margin-bottom:var(--s1); border:0; padding:0; letter-spacing:-.026em}
+.legal .note p,.legal .hl p{font-size:.9375rem; line-height:1.9; letter-spacing:-.015em; color:var(--label-2)}
+.legal .note p + p,.legal .hl p + p{margin-top:var(--s1)}
+.legal .legalmain section{margin-top:var(--s5)}
+.legal .legalmain section:first-of-type{margin-top:0}
+.legal .legalmain h2{font-size:1.25rem; line-height:1.45; font-weight:700; letter-spacing:-.023em;
+  padding-bottom:var(--s1); border-bottom:2px solid var(--red)}
+.legal .legalmain section > p{margin-top:var(--s2); font-size:1rem; line-height:1.9; letter-spacing:-.019em;
+  color:var(--label-2)}
+.legal .legalmain section > p + p{margin-top:var(--s1)}
+.legal .legalmain ul,.legal .legalmain ol{margin:var(--s2) 0 0; padding-left:1.3em; font-size:1rem;
+  line-height:1.9; letter-spacing:-.019em; color:var(--label-2)}
+.legal .legalmain li{margin-bottom:6px}
+.legal .legalmain li strong,.legal .hl strong{color:var(--label); font-weight:600}
+.legal .tbl{margin-top:var(--s2); background:var(--card); border-radius:16px; box-shadow:var(--card-shadow); overflow:hidden}
+.legal .tbl > div{display:grid; gap:2px var(--s4); padding:var(--s2); border-bottom:1px solid var(--separator)}
+@media(min-width:720px){ .legal .tbl > div{grid-template-columns:200px 1fr; gap:0 var(--s4)} }
+.legal .tbl > div:last-child{border-bottom:0}
+.legal .tbl b{font-size:.9375rem; font-weight:600; letter-spacing:-.015em; color:var(--label)}
+.legal .tbl span{font-size:.9375rem; line-height:1.9; letter-spacing:-.015em; color:var(--label-2)}
+.legal .rev{margin-top:var(--s5); padding-top:var(--s2); border-top:1px solid var(--separator);
+  font-size:.8125rem; letter-spacing:-.006em; color:var(--label-2)}
 
-/* pricing note */
-.pricebox{margin:40px auto 0; max-width:820px; border-radius:16px; border:1px solid var(--n200); background:var(--soft); padding:24px 28px}
-.pricebox .pt{font-size:12px; font-weight:700; letter-spacing:.18em; color:var(--red)}
-.pricebox p{margin-top:8px; font-size:14.5px; line-height:1.95; color:var(--n700)}
-.pricebox .pl a{color:var(--red-dark); text-underline-offset:3px}
-
-/* credentials card (outside .bio, so it carries its own copies of the bio styles) */
-.creds{border-radius:24px; background:#fff; padding:32px; box-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px var(--n100)}
-.creds .role{font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:var(--red)}
-.creds h3{margin-top:10px; font-size:26px}
-.creds .romaji{margin-top:4px; font-family:"Bebas Neue",sans-serif; font-size:18px; letter-spacing:.14em; color:var(--n500)}
-.creds .cred{margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px}
-.creds .cred li{font-size:12.5px; line-height:1.6; padding:6px 12px; border-radius:9999px; background:var(--n100); color:var(--n700)}
-.creds .cred li.hi{background:var(--red); color:#fff}
-.creds .txt{font-size:15px; line-height:1.95; color:var(--n700)}
-
-.story .stack{display:grid; gap:16px}
-@media(max-width:767px){ .hero-photo h1{font-size:clamp(30px, 9vw, 40px)} }
-@media(min-width:768px){ .steps.three{grid-template-columns:repeat(3,1fr)} }
+/* ---- motion: everything rests visible; .in only settles a small drift ---- */
+.rv{transform:translateY(12px); transition:transform .55s cubic-bezier(.32,.72,0,1)}
+.rv.in{transform:none}
+@media (prefers-reduced-motion:reduce){ .rv{transform:none; transition:none} .btn:active{transform:none} }
 </style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+
+<!-- interface icons (24×24, drawn on the same 1.6 stroke) -->
+<symbol id="ic-dumbbell" viewBox="0 0 24 24"><path d="M4 10.5v3M7.5 8v8M16.5 8v8M20 10.5v3M7.5 12h9"/></symbol>
+<symbol id="ic-flat" viewBox="0 0 24 24"><path d="M4 5v14h16"/><path d="M7 14h3l2.5-1.5L15 14h4"/></symbol>
+<symbol id="ic-briefcase" viewBox="0 0 24 24"><rect x="3.5" y="7.5" width="17" height="11.5" rx="3"/><path d="M9 7.5V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1.5M3.5 12.5h17"/></symbol>
+<symbol id="ic-body" viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="2.5"/><path d="M7.5 20v-3.5C7.5 14 9.5 12 12 12s4.5 2 4.5 4.5V20"/><path d="M9 16.8c1.8.9 4.2.9 6 0"/></symbol>
+<symbol id="ic-play" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="4.5"/><path d="M10.5 9.3l5 2.7-5 2.7z"/></symbol>
+<symbol id="ic-praise" viewBox="0 0 24 24"><path d="M20.5 11.5A7.5 7.5 0 0 1 13 19H9l-4.5 3v-4.7A7.5 7.5 0 0 1 13 4a7.5 7.5 0 0 1 7.5 7.5z"/><path d="M9.8 11.8l2 2 3.6-3.6"/></symbol>
+<symbol id="ic-loop" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20.5 3.5v4h-4"/><path d="M11 9.6a1.6 1.6 0 1 1 2.2 1.5c-.7.4-1.2.9-1.2 1.7M12 15.6v.3"/></symbol>
+
+<symbol id="ic-cal2" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="14" rx="3.5"/><path d="M3.5 10h17M8 3.5v4M16 3.5v4"/><path d="M8.5 14h2M13.5 14h2"/></symbol>
+<symbol id="ic-bowl" viewBox="0 0 24 24"><path d="M3.5 11h17a8.5 8.5 0 0 1-17 0z"/><path d="M8.5 8c0-1.4 1-1.8 1-3.2M12 8c0-1.4 1-1.8 1-3.2M15.5 8c0-1.4 1-1.8 1-3.2"/></symbol>
+<symbol id="ic-store" viewBox="0 0 24 24"><path d="M3 9l1.6-4.5h14.8L21 9"/><path d="M4.6 9v10.5h14.8V9M3 9h18"/><path d="M10 19.5v-5h4v5"/></symbol>
+<symbol id="ic-refresh" viewBox="0 0 24 24"><path d="M3.8 12a8.2 8.2 0 0 1 14-5.8l2.4 2.3"/><path d="M20.2 12a8.2 8.2 0 0 1-14 5.8l-2.4-2.3"/><path d="M20.7 4.4v4.1h-4.1M3.3 19.6v-4.1h4.1"/></symbol>
+<symbol id="ic-doc-check" viewBox="0 0 24 24"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5z"/><path d="M14 3.5v5h5"/><path d="M8.6 14.4l2.2 2.2 4.4-4.4"/></symbol>
+<symbol id="ic-speak" viewBox="0 0 24 24"><path d="M3.5 8.5a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H10l-4 3v-3h-.5a2 2 0 0 1-2-2z"/><path d="M12 8v3.2M12 13.4v.3"/></symbol>
+
+<symbol id="ic-clipboard" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="3"/><path d="M9 6V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V6z"/><path d="M8.6 11h6.8M8.6 14.5h6.8M8.6 18h4"/></symbol>
+<symbol id="ic-plate" viewBox="0 0 24 24"><circle cx="10.5" cy="12" r="7.5"/><circle cx="10.5" cy="12" r="4"/><path d="M19.5 5v6M18 5v3.4M21 5v3.4M19.5 11v8"/></symbol>
+<symbol id="ic-chart-week" viewBox="0 0 24 24"><path d="M3.5 20h17"/><path d="M6.5 20v-5M11 20v-8.5M15.5 20v-3.5M20 20v-12"/></symbol>
+<symbol id="ic-chat" viewBox="0 0 24 24"><path d="M4 5.5h16A1.5 1.5 0 0 1 21.5 7v8a1.5 1.5 0 0 1-1.5 1.5h-8l-5 3.8v-3.8H4A1.5 1.5 0 0 1 2.5 15V7A1.5 1.5 0 0 1 4 5.5z"/><path d="M7.5 11h1M11.5 11h1M15.5 11h1"/></symbol>
+<symbol id="ic-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+
+<!-- stage illustrations (120×80) -->
+<symbol id="st-habit" viewBox="0 0 120 80"><rect x="14" y="14" width="92" height="54" rx="8"/><path d="M14 28h92M38 8v10M82 8v10"/><path d="M27 43l4.5 4.5L40 39M59 43l4.5 4.5L72 39"/><path d="M84 45h10" stroke-opacity=".35"/><path d="M27 59h10M59 59h10M84 59h10" stroke-opacity=".35"/></symbol>
+<symbol id="st-change" viewBox="0 0 120 80"><circle cx="28" cy="20" r="7.5"/><path d="M15 68V45c0-7.2 5.8-13 13-13s13 5.8 13 13v23"/><path d="M53 42h13M61.5 37.5L66 42l-4.5 4.5"/><circle cx="92" cy="18" r="7.5"/><path d="M80 68l2.5-24c.6-5.8 4.6-9.6 9.5-9.6s8.9 3.8 9.5 9.6L104 68"/></symbol>
+<symbol id="st-enjoy" viewBox="0 0 120 80"><path d="M24 46h72M30 36v20M37 39v14M83 39v14M90 36v20"/><path d="M60 14c-3.2-5-11-3-11 3.2 0 5.2 7.4 8 11 12.3 3.6-4.3 11-7.1 11-12.3C71 11 63.2 9 60 14z"/><path d="M15 22v6M12 25h6M105 58v6M102 61h6" stroke-opacity=".4"/></symbol>
+<symbol id="st-above" viewBox="0 0 120 80"><path d="M12 68h96"/><path d="M10 40h100" stroke-dasharray="5 5" stroke-opacity=".45"/><rect x="22" y="52" width="13" height="16" rx="3"/><rect x="43" y="46" width="13" height="22" rx="3"/><rect x="64" y="56" width="13" height="12" rx="3"/><rect x="85" y="24" width="13" height="44" rx="3" fill="currentColor" fill-opacity=".14"/><circle cx="91.5" cy="16" r="4"/></symbol>
+
+<!-- consultation: what the first LINE message looks like (240×400) -->
+<symbol id="ill-phone" viewBox="0 0 240 400"><rect x="20" y="8" width="200" height="384" rx="34"/><rect x="96" y="16" width="48" height="8" rx="4" stroke-opacity=".5"/><path d="M30 44h180" stroke-opacity=".35"/>
+<rect x="40" y="66" width="118" height="52" rx="16"/><path d="M56 86h84M56 100h56" stroke-opacity=".45"/>
+<rect x="84" y="132" width="116" height="66" rx="16" fill="currentColor" fill-opacity=".12"/><path d="M100 152h82M100 166h82M100 180h52" stroke-opacity=".45"/>
+<rect x="40" y="212" width="126" height="52" rx="16"/><path d="M56 232h92M56 246h60" stroke-opacity=".45"/>
+<rect x="38" y="326" width="122" height="38" rx="19" stroke-opacity=".5"/><circle cx="188" cy="345" r="19"/><path d="M180 345h14M188 339l6 6-6 6"/></symbol>
+
+</defs></svg>
 
 <header class="sitehead">
   <div class="bar">
@@ -520,7 +554,7 @@ body{background:var(--white)}
       <a href="#/#faq">よくある質問</a>
     </nav>
     <a class="btn btn-red navcta" href="#/#contact">まずは相談してみる</a>
-    <button class="menubtn" type="button" id="menubtn" aria-label="メニュー" aria-expanded="false" aria-controls="drawer"><span></span></button>
+    <button class="menubtn" type="button" id="menubtn" aria-label="メニュー" aria-expanded="false" aria-controls="drawer"><svg aria-hidden="true"><use href="#ic-menu"></use></svg></button>
   </div>
   <div class="drawer" id="drawer">
     <div class="inner">
@@ -537,7 +571,7 @@ body{background:var(--white)}
 <main id="app">
 <section class="route" id="r-ja-lp" data-route="#/">
 
-<header class="hero hero-photo">
+<header class="hero">
   <img class="bgimg" data-img="i0" alt="" aria-hidden="true">
   <div class="scrim" aria-hidden="true"></div>
   <div class="wrap">
@@ -546,7 +580,7 @@ body{background:var(--white)}
       <h1 class="rv" data-d="80">今度こそ、<br>平均以上の身体へ。</h1>
       <p class="lead rv" data-d="160">仕事も生活もある。毎日完璧にはできない。それでも、自分が納得できる身体は作れる。あなたの生活に合わせたトレーニングと食事で、もう一度ここから始めよう。</p>
       <div class="btnrow rv" data-d="240">
-        <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">InstagramのDMで相談する <span aria-hidden="true">→</span></a>
+        <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">InstagramのDMで相談する</a>
         <a class="btn btn-outline" href="#method">RafaCoachの進め方を見る</a>
       </div>
       <p class="fine rv" data-d="280">相談だけで終わっても大丈夫です。今の生活と、これまでに試したことを聞かせてください。</p>
@@ -559,20 +593,20 @@ body{background:var(--white)}
   </div>
 </header>
 
-<section class="sec sec-white" id="empathy">
-  <div class="wrap-mid">
+<section class="sec sec-soft" id="empathy">
+  <div class="wrap">
     <div class="shead">
       <span class="eyebrow rv">こんな経験、ありませんか？</span>
       <h2 class="rv" data-d="80">一つでも当てはまるなら、<br class="nb">このページはあなたのためのものです。</h2>
     </div>
-    <ul class="checks">
-      <li class="rv">ジムに入ったけど、いつの間にか行かなくなった</li>
-      <li class="rv" data-d="40">筋トレしているのに、思ったほど身体が変わらない</li>
-      <li class="rv" data-d="80">仕事が忙しくなるたびに、トレーニングをやめてしまう</li>
-      <li class="rv" data-d="120">若い頃より、明らかに身体がだらしなくなった</li>
-      <li class="rv" data-d="160">YouTubeを見て色々試したけど、何が正しいのか分からない</li>
-      <li class="rv" data-d="200">本当は一度くらい「身体いいね」と言われてみたい</li>
-      <li class="rv wide" data-d="240">また始めても、どうせ続かないんじゃないかと思ってしまう</li>
+    <ul class="checks rv" data-d="120">
+      <li><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-dumbbell"></use></svg></span>ジムに入ったけど、いつの間にか行かなくなった</li>
+      <li><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-flat"></use></svg></span>筋トレしているのに、思ったほど身体が変わらない</li>
+      <li><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-briefcase"></use></svg></span>仕事が忙しくなるたびに、トレーニングをやめてしまう</li>
+      <li><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-body"></use></svg></span>若い頃より、明らかに身体がだらしなくなった</li>
+      <li><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-play"></use></svg></span>YouTubeで色々試したけど、何が正しいのか分からない</li>
+      <li><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-praise"></use></svg></span>本当は一度くらい「身体いいね」と言われてみたい</li>
+      <li><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-loop"></use></svg></span>また始めても、どうせ続かないんじゃないかと思ってしまう</li>
     </ul>
     <div class="turn rv">
       <p class="big">続かなかった過去より、<br class="nb"><em>まだ変わりたいと思っていること</em>の方が、ずっと大切です。</p>
@@ -582,7 +616,6 @@ body{background:var(--white)}
 </section>
 
 <section class="sec sec-dark" id="belief">
-  <span class="watermark" aria-hidden="true">R</span>
   <div class="wrap">
     <div class="belief">
       <div>
@@ -599,7 +632,7 @@ body{background:var(--white)}
   </div>
 </section>
 
-<section class="sec sec-soft" id="future">
+<section class="sec sec-white" id="future">
   <div class="wrap">
     <div class="shead">
       <span class="eyebrow rv">目指す身体</span>
@@ -607,16 +640,16 @@ body{background:var(--white)}
       <p class="sub rv" data-d="160">最初は「少し身体を変えたい」で十分です。でも、トレーニングを続けて身体が変わり始めると、「もっと肩をつけたい」「胸板を厚くしたい」「服が似合う身体になりたい」。そんな次の目標が見えてきます。</p>
     </div>
     <ol class="stages">
-      <li class="rv" data-d="0"><span class="st">STAGE 01</span><h3>続くようになる</h3><p>最初は週2回でいい。行ける週と行けない週の波をなくして、ジムに通うことが当たり前の状態にします。</p></li>
-      <li class="rv" data-d="80"><span class="st">STAGE 02</span><h3>身体が変わる</h3><p>体重の数字だけでなく、鏡に映る肩や胸、お腹まわりが変わり始めます。昔の服の見え方も変わってきます。</p></li>
-      <li class="rv" data-d="160"><span class="st">STAGE 03</span><h3>楽しくなる</h3><p>「やらなきゃいけないもの」だった筋トレが、「もっと良くなりたいもの」に変わっていきます。</p></li>
-      <li class="rv" data-d="240"><span class="st">STAGE 04</span><h3>平均以上へ</h3><p>胸や肩をつけて、服が似合う身体へ。周りより少し良い身体を、本気で目指します。</p></li>
+      <li class="rv" data-d="0"><svg class="ill art" viewBox="0 0 120 80" aria-hidden="true"><use href="#st-habit"></use></svg><span class="st">STAGE 01</span><h3>続くようになる</h3><p>最初は週2回でいい。行ける週と行けない週の波をなくして、ジムに通うことが当たり前の状態にします。</p></li>
+      <li class="rv" data-d="80"><svg class="ill art" viewBox="0 0 120 80" aria-hidden="true"><use href="#st-change"></use></svg><span class="st">STAGE 02</span><h3>身体が変わる</h3><p>体重の数字だけでなく、鏡に映る肩や胸、お腹まわりが変わり始めます。昔の服の見え方も変わってきます。</p></li>
+      <li class="rv" data-d="160"><svg class="ill art" viewBox="0 0 120 80" aria-hidden="true"><use href="#st-enjoy"></use></svg><span class="st">STAGE 03</span><h3>楽しくなる</h3><p>「やらなきゃいけないもの」だった筋トレが、「もっと良くなりたいもの」に変わっていきます。</p></li>
+      <li class="rv" data-d="240"><svg class="ill art" viewBox="0 0 120 80" aria-hidden="true"><use href="#st-above"></use></svg><span class="st">STAGE 04</span><h3>平均以上へ</h3><p>胸や肩をつけて、服が似合う身体へ。周りより少し良い身体を、本気で目指します。</p></li>
     </ol>
     <p class="goal rv">RafaCoachが目指すのは、ただ運動することでも、ただ体重を落とすことでもありません。<br class="nb"><strong>自分自身が納得できる、平均以上の身体を作ること</strong>。そこまで一緒に進みます。</p>
   </div>
 </section>
 
-<section class="sec sec-white" id="method">
+<section class="sec sec-soft" id="method">
   <div class="wrap">
     <div class="shead">
       <span class="eyebrow rv">RafaCoachの進め方</span>
@@ -632,17 +665,17 @@ body{background:var(--white)}
       <p class="fit-p">そのうえで、「この人なら、このやり方なら続けられる」という形を一緒に作ります。生活が変われば、プランも変えます。</p>
     </div>
     <div class="cards">
-      <div class="card rv" data-d="0"><h3>週2回からでも組める</h3><p>行ける回数を無理に増やす前提では組みません。総量が確保できていれば、週2回でも結果につながる設計は可能です。続かない週5回より、続く週2回です。</p></div>
-      <div class="card rv" data-d="60"><h3>好きなものは残す</h3><p>ラーメンも焼肉も残したまま設計します。全部やめるやり方は長く続きません。続く形でなければ、身体は変わりません。</p></div>
-      <div class="card rv" data-d="120"><h3>自炊できなくても大丈夫</h3><p>コンビニ、スーパーの惣菜、社食、外食チェーン。実際に買えるもので、たんぱく質とカロリーの目安に収まる組み合わせを作ります。</p></div>
-      <div class="card rv" data-d="180"><h3>生活が変わったら組み直す</h3><p>繁忙期、残業続き、異動、家族の予定。生活のリズムが変わったら、止まるのではなく、プランの方を変えます。</p></div>
-      <div class="card rv" data-d="240"><h3>数字には根拠がある</h3><p>たんぱく質の量もトレーニングの頻度も、研究を根拠に設定します。何を、なぜその数字にしたのかを毎回説明します。</p></div>
-      <div class="card rv" data-d="300"><h3>逃げている時は、ちゃんと言う</h3><p>できない事情には寄り添います。でも、できることから逃げている時は、はっきり伝えます。優しいだけでも、厳しいだけでもないコーチングです。</p></div>
+      <div class="card rv" data-d="0"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-cal2"></use></svg></span><h3>週2回からでも組める</h3><p>行ける回数を無理に増やす前提では組みません。総量が確保できていれば、週2回でも結果につながる設計は可能です。続かない週5回より、続く週2回です。</p></div>
+      <div class="card rv" data-d="60"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-bowl"></use></svg></span><h3>好きなものは残す</h3><p>ラーメンも焼肉も残したまま設計します。全部やめるやり方は長く続きません。続く形でなければ、身体は変わりません。</p></div>
+      <div class="card rv" data-d="120"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-store"></use></svg></span><h3>自炊できなくても大丈夫</h3><p>コンビニ、スーパーの惣菜、社食、外食チェーン。実際に買えるもので、たんぱく質とカロリーの目安に収まる組み合わせを作ります。</p></div>
+      <div class="card rv" data-d="180"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-refresh"></use></svg></span><h3>生活が変わったら組み直す</h3><p>繁忙期、残業続き、異動、家族の予定。生活のリズムが変わったら、止まるのではなく、プランの方を変えます。</p></div>
+      <div class="card rv" data-d="240"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-doc-check"></use></svg></span><h3>数字には根拠がある</h3><p>たんぱく質の量もトレーニングの頻度も、研究を根拠に設定します。何を、なぜその数字にしたのかを毎回説明します。</p></div>
+      <div class="card rv" data-d="300"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-speak"></use></svg></span><h3>逃げている時は、ちゃんと言う</h3><p>できない事情には寄り添います。でも、できることから逃げている時は、はっきり伝えます。優しいだけでも、厳しいだけでもないコーチングです。</p></div>
     </div>
   </div>
 </section>
 
-<section class="sec sec-soft" id="results">
+<section class="sec sec-white" id="results">
   <div class="wrap">
     <div class="shead center">
       <span class="eyebrow rv">生徒の変化</span>
@@ -650,93 +683,93 @@ body{background:var(--white)}
       <p class="sub rv" data-d="160">始めた理由も、生活も、スタート地点も違う。共通しているのは、自分に合った方法を見つけて、それを続けたことです。</p>
     </div>
     <div class="slider rv" data-d="200" data-slider>
-      <button class="sl-arrow prev" type="button" aria-label="前へ">‹</button>
+      <button class="sl-arrow prev" type="button" aria-label="前へ">&#8249;</button>
       <div class="sl-track">
           <article class="slide">
-            <div class="slide-head"><h3>Gilmar</h3></div>
+            <div class="slide-head"><h3>G.Iさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i1" alt="Gilmar — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i2" alt="Gilmar — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i1" alt="G.Iさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i2" alt="G.Iさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Júlio</h3></div>
+            <div class="slide-head"><h3>J.Uさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i3" alt="Júlio — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i4" alt="Júlio — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i3" alt="J.Uさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i4" alt="J.Uさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Thiago</h3></div>
+            <div class="slide-head"><h3>T.Hさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i5" alt="Thiago — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i6" alt="Thiago — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i5" alt="T.Hさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i6" alt="T.Hさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Marcelo</h3></div>
+            <div class="slide-head"><h3>M.Aさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i7" alt="Marcelo — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i8" alt="Marcelo — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i7" alt="M.Aさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i8" alt="M.Aさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Keiji</h3></div>
+            <div class="slide-head"><h3>K.Eさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i9" alt="Keiji — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i10" alt="Keiji — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i9" alt="K.Eさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i10" alt="K.Eさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Yusuke</h3></div>
+            <div class="slide-head"><h3>Y.Uさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i11" alt="Yusuke — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i12" alt="Yusuke — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i11" alt="Y.Uさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i12" alt="Y.Uさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Guilherme</h3></div>
+            <div class="slide-head"><h3>G.Uさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i13" alt="Guilherme — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i14" alt="Guilherme — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i13" alt="G.Uさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i14" alt="G.Uさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Leonardo</h3></div>
+            <div class="slide-head"><h3>L.Eさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i15" alt="Leonardo — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i16" alt="Leonardo — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i15" alt="L.Eさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i16" alt="L.Eさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Adriana</h3></div>
+            <div class="slide-head"><h3>A.Dさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i18" alt="Adriana — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i17" alt="Adriana — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i18" alt="A.Dさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i17" alt="A.Dさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
           <article class="slide">
-            <div class="slide-head"><h3>Bela</h3></div>
+            <div class="slide-head"><h3>B.Eさん</h3></div>
             <div class="ba">
-              <figure><img data-img="i19" alt="Bela — before" loading="lazy"><figcaption>BEFORE</figcaption></figure>
-              <figure class="after"><img data-img="i20" alt="Bela — after" loading="lazy"><figcaption>AFTER</figcaption></figure>
+              <figure><img data-img="i19" alt="B.Eさん ビフォー" loading="lazy"><figcaption>BEFORE</figcaption></figure>
+              <figure class="after"><img data-img="i20" alt="B.Eさん アフター" loading="lazy"><figcaption>AFTER</figcaption></figure>
             </div>
           </article>
       </div>
-      <button class="sl-arrow next" type="button" aria-label="次へ">›</button>
+      <button class="sl-arrow next" type="button" aria-label="次へ">&#8250;</button>
     </div>
     <div class="sl-foot"><div class="dots"></div><span class="sl-count"></span></div>
     <p class="disclaimer rv" data-d="240">写真は本人の同意を得て掲載しています。効果には個人差があり、同じ結果を保証するものではありません。</p>
   </div>
 </section>
 
-<section class="sec sec-white" id="story">
+<section class="sec sec-soft" id="story">
   <div class="wrap">
     <div class="shead">
       <span class="eyebrow rv">Rafaについて</span>
       <h2 class="rv" data-d="80">僕も、最初から<br class="nb">続けられたわけじゃない。</h2>
     </div>
-    <div class="bio story">
+    <div class="bio">
       <div class="rv stack" data-d="0"><img class="photo" data-img="i21" alt="イワザキ ハファエル（Rafa）"><img class="photo" data-img="i24" alt="娘とジムで" loading="lazy"></div>
       <div class="story-body">
         <p class="txt rv" data-d="60">高校を卒業して、最初に働いたのは工場でした。残業が多くて、帰ったらゲームをして、遅く寝て、また仕事に行く。給料もそれほど高くない。「この生活が、このまま一生続くのかな」と本気で思っていました。</p>
@@ -762,7 +795,7 @@ body{background:var(--white)}
         <p>体質が良かったわけでも、才能があったわけでもありません。変えたのは<strong>食事・生活習慣・睡眠</strong>の3つ。一時的に頑張るのではなく、自分の生活の中で続けられる形を作り、それを積み重ねてきました。同じことを、あなたの仕事と生活に合わせて設計します。</p>
       </div>
     </div>
-    <div class="info creds rv" data-d="120">
+    <div class="creds rv" data-d="120">
       <div>
         <span class="role">IFBB 公認 · オンラインコーチ</span>
         <h3>イワザキ ハファエル</h3>
@@ -783,7 +816,7 @@ body{background:var(--white)}
   </div>
 </section>
 
-<section class="sec sec-soft" id="service">
+<section class="sec sec-white" id="service">
   <div class="wrap">
     <div class="shead">
       <span class="eyebrow rv">サポート内容</span>
@@ -791,27 +824,30 @@ body{background:var(--white)}
       <p class="sub rv" data-d="160">すべてオンラインで完結します。住んでいる場所や、通えるジムの有無は問いません。</p>
     </div>
     <div class="cards">
-      <div class="card rv" data-d="0"><h3>あなた専用のトレーニングプラン</h3><p>ジムでも自宅でも対応。フォーム動画と進め方つき。疲れている日のための短いメニューも用意します。</p></div>
-      <div class="card rv" data-d="60"><h3>生活に合わせた食事設計</h3><p>たんぱく質とカロリーの目安を決め、その中に好きなものを組み込みます。禁止する食べ物はありません。</p></div>
-      <div class="card rv" data-d="120"><h3>コンビニ・外食の選び方</h3><p>自炊できない日のために、コンビニやスーパー、外食チェーンでの組み合わせ方をお伝えします。</p></div>
-      <div class="card rv" data-d="180"><h3>毎週の報告と調整</h3><p>体重、写真、食事、トレーニングの記録を見て、毎週プランを修正します。止まった時こそ、ここが効きます。</p></div>
-      <div class="card rv" data-d="240"><h3>生活が変わった時の組み直し</h3><p>仕事の時間やシフト、家族の予定が変わっても、追加費用なしでプランを作り直します。</p></div>
-      <div class="card rv" data-d="300"><h3>私との直接のやり取り</h3><p>チャットボットでも代行でもなく、私が直接お返事します。</p></div>
+      <div class="card rv" data-d="0"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-clipboard"></use></svg></span><h3>あなた専用のトレーニングプラン</h3><p>ジムでも自宅でも対応。フォーム動画と進め方つき。疲れている日のための短いメニューも用意します。</p></div>
+      <div class="card rv" data-d="60"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-plate"></use></svg></span><h3>生活に合わせた食事設計</h3><p>たんぱく質とカロリーの目安を決め、その中に好きなものを組み込みます。禁止する食べ物はありません。</p></div>
+      <div class="card rv" data-d="120"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-store"></use></svg></span><h3>コンビニ・外食の選び方</h3><p>自炊できない日のために、コンビニやスーパー、外食チェーンでの組み合わせ方をお伝えします。</p></div>
+      <div class="card rv" data-d="180"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-chart-week"></use></svg></span><h3>毎週の報告と調整</h3><p>体重、写真、食事、トレーニングの記録を見て、毎週プランを修正します。止まった時こそ、ここが効きます。</p></div>
+      <div class="card rv" data-d="240"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-refresh"></use></svg></span><h3>生活が変わった時の組み直し</h3><p>仕事の時間やシフト、家族の予定が変わっても、追加費用なしでプランを作り直します。</p></div>
+      <div class="card rv" data-d="300"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-chat"></use></svg></span><h3>私との直接のやり取り</h3><p>チャットボットでも代行でもなく、私が直接お返事します。</p></div>
     </div>
   </div>
 </section>
 
-<section class="sec sec-white" id="consult">
+<section class="sec sec-soft" id="consult">
   <div class="wrap">
     <div class="shead center">
       <span class="eyebrow rv">相談からはじめる</span>
       <h2 class="rv" data-d="80">まずは、話を聞かせてください。</h2>
       <p class="sub rv" data-d="160">必要な期間も内容も、人によって違います。まず今の生活と目標を伺って、あなたに何が必要かをお伝えします。</p>
     </div>
-    <div class="steps three">
-      <div class="step rv" data-d="0"><div class="n">01</div><h3>相談</h3><p>今の生活、これまでに試したこと、なりたい身体。うまく言葉にできなくても大丈夫です。15〜20分ほどです。</p></div>
-      <div class="step rv" data-d="80"><div class="n">02</div><h3>サービスのご説明</h3><p>いま何が結果を止めているのかを整理して、どう進めるかをご説明します。ここで終わっても構いません。</p></div>
-      <div class="step rv" data-d="160"><div class="n">03</div><h3>お申し込み</h3><p>期間・内容・料金を書面でお渡しします。その場で決める必要はありません。納得してからお申し込みください。</p></div>
+    <div class="flow">
+      <div class="steps">
+        <div class="step rv" data-d="0"><span class="n">1</span><div><h3>相談</h3><p>今の生活、これまでに試したこと、なりたい身体。うまく言葉にできなくても大丈夫です。15〜20分ほどです。</p></div></div>
+        <div class="step rv" data-d="80"><span class="n">2</span><div><h3>サービスのご説明</h3><p>いま何が結果を止めているのかを整理して、どう進めるかをご説明します。ここで終わっても構いません。</p></div></div>
+        <div class="step rv" data-d="160"><span class="n">3</span><div><h3>お申し込み</h3><p>期間・内容・料金を書面でお渡しします。その場で決める必要はありません。納得してからお申し込みください。</p></div></div>
+      </div>
+      <div class="rv" data-d="120"><svg class="ill phone" viewBox="0 0 240 400" aria-hidden="true"><use href="#ill-phone"></use></svg></div>
     </div>
     <div class="pricebox rv" data-d="200">
       <p class="pt">料金について</p>
@@ -824,41 +860,40 @@ body{background:var(--white)}
       <div class="rv" data-d="120"><span>NO RUSH</span>その場で決めなくて大丈夫</div>
     </div>
     <div class="btnrow center rv" data-d="200">
-      <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">InstagramのDMで相談する <span aria-hidden="true">→</span></a>
+      <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">自分に合うプランを相談する</a>
     </div>
   </div>
 </section>
 
-<section class="sec sec-soft" id="faq">
+<section class="sec sec-white" id="faq">
   <div class="wrap-narrow">
     <div class="shead center">
       <span class="eyebrow rv">よくある質問</span>
       <h2 class="rv" data-d="80">始める前の、よくある不安。</h2>
     </div>
-    <div class="faq">
-      <details class="rv"><summary><span class="q">何度もジムをやめています。それでも大丈夫ですか</span><span class="plus">＋</span></summary><p>大丈夫です。ご相談いただく方の多くが、一度は続かなかった経験を持っています。僕自身もそうでした。まず、なぜ続かなかったのかを一緒に振り返り、同じ理由で止まらない形を作ります。</p></details>
-      <details class="rv"><summary><span class="q">仕事が忙しく、週に使える時間が少ないです</span><span class="plus">＋</span></summary><p>週2回からでも設計できます。総量が確保されていれば、1つの筋群を週2回鍛えることで良い結果が得られることが研究で示されています。残業が多い時期、シフトがある方、家族の予定が入る方も、その前提で組み立てます。</p></details>
-      <details class="rv"><summary><span class="q">ジムには通っていますが、ずっと自己流です</span><span class="plus">＋</span></summary><p>その状態から始める方がほとんどです。今のメニューと生活を見せていただき、効いていない部分と足りない部分を整理してから組み直します。フォーム動画もお渡しします。</p></details>
-      <details class="rv"><summary><span class="q">ある程度は鍛えています。それでも受けられますか</span><span class="plus">＋</span></summary><p>むしろ、その方が中心です。続けているのに身体が変わらない方、胸や肩をもっとつけたい方、平均以上の身体を本気で目指したい方に向いています。競技経験をもとに、段階に合わせてプランを上げていきます。</p></details>
-      <details class="rv"><summary><span class="q">自炊する時間がありません</span><span class="plus">＋</span></summary><p>問題ありません。コンビニ、スーパーの惣菜、社食、外食チェーンを前提に組み立てます。自炊したい日があれば組み込みますが、必須ではありません。</p></details>
-      <details class="rv"><summary><span class="q">ラーメンや焼肉はやめないといけませんか</span><span class="plus">＋</span></summary><p>やめません。たんぱく質とカロリーの枠を決めて、その中に好きなものを入れる方式です。全部やめるやり方は長く続かないので、採用していません。</p></details>
-      <details class="rv"><summary><span class="q">たんぱく質は結局どれくらい必要ですか</span><span class="plus">＋</span></summary><p>筋肥大目的では、49件の研究をまとめたメタ解析で、体重1kgあたり約1.6g/日を超えると追加の効果が検出されなくなると報告されています。減量中はより多めが推奨されます。正確な数値は個別に設定しますが、ご相談いただく方の多くはこの水準を下回っています。</p><p class="src">出典：<a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener">Morton et al., 2018</a></p></details>
-      <details class="rv"><summary><span class="q">プロテインは飲まないとだめですか</span><span class="plus">＋</span></summary><p>必須ではありません。食事から目標量に届くならそれで十分です。研究上も、摂取タイミングより1日の総量のほうが大きく影響すると報告されています。忙しくて食事の回数が確保しづらい方には、手段として便利なので提案することがあります。</p></details>
-      <details class="rv"><summary><span class="q">地方に住んでいます。対面は必要ですか</span><span class="plus">＋</span></summary><p>完全オンラインなので、どの都道府県でも受けられます。対面は行っていません。</p></details>
-      <details class="rv"><summary><span class="q">持病があります／薬を飲んでいます</span><span class="plus">＋</span></summary><p>トレーニング・栄養のサポートは、医師の診断や治療に代わるものではありません。持病がある方、服薬中の方、通院中の方は、まず主治医にご相談ください。その上でご相談いただければ、安全な範囲で設計します。</p></details>
+    <div class="faq rv" data-d="120">
+      <details><summary>何度もジムをやめています。それでも大丈夫ですか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>大丈夫です。ご相談いただく方の多くが、一度は続かなかった経験を持っています。僕自身もそうでした。まず、なぜ続かなかったのかを一緒に振り返り、同じ理由で止まらない形を作ります。</p></details>
+      <details><summary>仕事が忙しく、週に使える時間が少ないです<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>週2回からでも設計できます。総量が確保されていれば、1つの筋群を週2回鍛えることで良い結果が得られることが研究で示されています。残業が多い時期、シフトがある方、家族の予定が入る方も、その前提で組み立てます。</p></details>
+      <details><summary>ジムには通っていますが、ずっと自己流です<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>その状態から始める方がほとんどです。今のメニューと生活を見せていただき、効いていない部分と足りない部分を整理してから組み直します。フォーム動画もお渡しします。</p></details>
+      <details><summary>ある程度は鍛えています。それでも受けられますか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>むしろ、その方が中心です。続けているのに身体が変わらない方、胸や肩をもっとつけたい方、平均以上の身体を本気で目指したい方も対象です。競技経験をもとに、段階に合わせてプランを上げていきます。</p></details>
+      <details><summary>自炊する時間がありません<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>問題ありません。コンビニ、スーパーの惣菜、社食、外食チェーンを前提に組み立てます。自炊したい日があれば組み込みますが、必須ではありません。</p></details>
+      <details><summary>ラーメンや焼肉はやめないといけませんか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>やめません。たんぱく質とカロリーの枠を決めて、その中に好きなものを入れる方式です。全部やめるやり方は長く続かないので、採用していません。</p></details>
+      <details><summary>たんぱく質は結局どれくらい必要ですか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>筋肥大目的では、49件の研究をまとめたメタ解析で、体重1kgあたり約1.6g/日を超えると追加の効果が検出されなくなると報告されています。減量中はより多めが推奨されます。正確な数値は個別に設定しますが、ご相談いただく方の多くはこの水準を下回っています。</p><p class="src">出典：<a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener">Morton et al., 2018</a></p></details>
+      <details><summary>プロテインは飲まないとだめですか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>必須ではありません。食事から目標量に届くならそれで十分です。研究上も、摂取タイミングより1日の総量のほうが大きく影響すると報告されています。忙しくて食事の回数が確保しづらい方には、手段として便利なので提案することがあります。</p></details>
+      <details><summary>地方に住んでいます。対面は必要ですか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>完全オンラインなので、どの都道府県でも受けられます。対面は行っていません。</p></details>
+      <details><summary>持病があります／薬を飲んでいます<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>トレーニング・栄養のサポートは、医師の診断や治療に代わるものではありません。持病がある方、服薬中の方、通院中の方は、まず主治医にご相談ください。その上でご相談いただければ、安全な範囲で設計します。</p></details>
     </div>
   </div>
 </section>
 
 <section class="sec sec-dark" id="contact">
-  <span class="watermark" aria-hidden="true">R</span>
   <div class="wrap-mid">
     <div class="ctabox">
       <span class="eyebrow rv">もう一度、ここから</span>
-      <h2 class="rv" data-d="80" style="margin-top:16px">何度目の挑戦でもいい。<br>今度は、一人でやらなくていい。</h2>
+      <h2 class="rv" data-d="80" style="margin-top:12px">何度目の挑戦でもいい。<br>今度は、一人でやらなくていい。</h2>
       <p class="p rv" data-d="140">今の生活、これまでに試したこと、なりたい身体。うまく書けなくても大丈夫です。InstagramのDMから送ってください。私が直接お返事します。相談は無料です。</p>
       <div class="btnrow rv" data-d="200">
-        <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">InstagramのDMで相談する <span aria-hidden="true">→</span></a>
+        <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">InstagramのDMで相談する</a>
       </div>
     </div>
   </div>
@@ -1101,7 +1136,7 @@ body{background:var(--white)}
 
 <script>
 (function(){
-  var IMG = {"i0": "img/i0.jpg", "i1": "img/i1.jpg", "i2": "img/i2.jpg", "i3": "img/i3.jpg", "i4": "img/i4.jpg", "i5": "img/i5.jpg", "i6": "img/i6.jpg", "i7": "img/i7.jpg", "i8": "img/i8.jpg", "i9": "img/i9.jpg", "i10": "img/i10.jpg", "i11": "img/i11.jpg", "i12": "img/i12.jpg", "i13": "img/i13.jpg", "i14": "img/i14.jpg", "i15": "img/i15.jpg", "i16": "img/i16.jpg", "i17": "img/i17.jpg", "i18": "img/i18.jpg", "i19": "img/i19.jpg", "i20": "img/i20.jpg", "i21": "img/i21.jpg", "i22": "img/i22.jpg", "i23": "img/i23.jpg","i24":"img/i24.jpg"};
+  var IMG = {"i0": "img/i0.jpg", "i1": "img/i1.jpg", "i2": "img/i2.jpg", "i3": "img/i3.jpg", "i4": "img/i4.jpg", "i5": "img/i5.jpg", "i6": "img/i6.jpg", "i7": "img/i7.jpg", "i8": "img/i8.jpg", "i9": "img/i9.jpg", "i10": "img/i10.jpg", "i11": "img/i11.jpg", "i12": "img/i12.jpg", "i13": "img/i13.jpg", "i14": "img/i14.jpg", "i15": "img/i15.jpg", "i16": "img/i16.jpg", "i17": "img/i17.jpg", "i18": "img/i18.jpg", "i19": "img/i19.jpg", "i20": "img/i20.jpg", "i21": "img/i21.jpg", "i22": "img/i22.jpg", "i23": "img/i23.jpg", "i24": "img/i24.jpg"};
 
   var ROUTES = {
     "#/":          {el:"r-ja-lp",   title:"RafaCoach｜今度こそ、平均以上の身体へ"},
@@ -1115,6 +1150,13 @@ body{background:var(--white)}
   document.querySelectorAll("img[data-img]").forEach(function(im){
     var u = IMG[im.getAttribute("data-img")]; if(u) im.src = u;
   });
+
+  // scroll edge effect: the bar is clear over the artwork and takes on the
+  // material once content scrolls beneath it
+  var head=document.querySelector(".sitehead");
+  function edge(){ head.classList.toggle("edge", window.scrollY > 8); }
+  edge();
+  window.addEventListener("scroll", edge, {passive:true});
 
   var drawer=document.getElementById("drawer"), menubtn=document.getElementById("menubtn");
   menubtn.addEventListener("click",function(){
@@ -1158,7 +1200,7 @@ body{background:var(--white)}
       });
       current=route;
       reveal(el);
-      if(!anchor) window.scrollTo(0,0);
+      if(!anchor){ window.scrollTo(0,0); edge(); }
     }
     if(anchor){
       var t=document.getElementById(anchor);
@@ -1211,6 +1253,5 @@ body{background:var(--white)}
   });
 })();
 </script>
-
-
-</body></html>
+</body>
+</html>
