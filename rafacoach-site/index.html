@@ -375,6 +375,77 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
   text-align:center; font-size:.9375rem; font-weight:600; letter-spacing:-.015em}
 .reassure span{display:block; font-size:.75rem; font-weight:600; letter-spacing:.04em; color:var(--red); margin-bottom:4px}
 
+/* ---- offer: bonus stack, guarantee, this month's places + deadline ----
+       one dark band, three panels; every number comes from OFFER in the script ---- */
+.offer-grid{margin-top:var(--s5); display:grid; gap:var(--s2)}
+@media(min-width:900px){ .offer-grid{grid-template-columns:1.15fr .85fr; align-items:start} }
+.offer-side{display:grid; gap:var(--s2)}
+.opanel{border-radius:20px; background:rgba(255,255,255,.055); border:1px solid var(--band-separator); padding:var(--s3)}
+@media(min-width:768px){ .opanel{padding:var(--s4)} }
+.opanel .ph{display:flex; align-items:center; gap:var(--s2)}
+.opanel .ph .ic-wrap{background:rgba(255,105,97,.18); color:var(--band-red)}
+.opanel h3{font-size:1.25rem; line-height:1.4; font-weight:700; letter-spacing:-.023em; color:var(--band-label)}
+.opanel .ph small{display:block; margin-top:2px; font-size:.8125rem; letter-spacing:-.006em; color:var(--band-label-2)}
+.opanel .fine{margin-top:var(--s2); font-size:.8125rem; line-height:1.75; letter-spacing:-.006em; color:var(--band-label-2)}
+.opanel .fine a{color:var(--band-red); text-decoration:underline; text-underline-offset:3px}
+
+.bonus{list-style:none; margin:var(--s3) 0 0; padding:0}
+.bonus li{display:flex; gap:var(--s2); align-items:flex-start; padding:14px 0; border-top:1px solid var(--band-separator)}
+.bonus .tag{flex:none; margin-top:6px; font-size:.6875rem; font-weight:700; letter-spacing:.08em; padding:3px 8px;
+  border-radius:6px; background:var(--band-red); color:#000; font-variant-numeric:tabular-nums}
+.bonus .bt{min-width:0; flex:1}
+.bonus b{display:block; font-size:1.0625rem; line-height:1.5; font-weight:600; letter-spacing:-.026em; color:var(--band-label)}
+.bonus p{margin-top:2px; font-size:.9375rem; line-height:1.75; letter-spacing:-.015em; color:var(--band-label-2)}
+.bonus .val{flex:none; text-align:right; font-size:.875rem; line-height:1.5; letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; color:var(--band-label-2); padding-top:4px}
+.bonus .val strong{display:block; font-size:1rem; font-weight:700; color:var(--band-red)}
+@media(max-width:480px){ .bonus li{flex-wrap:wrap} .bonus .val{width:100%; text-align:left; padding-left:calc(var(--s2) + 36px); padding-top:0}
+  .bonus .val strong{display:inline; margin-left:6px} }
+.bonus-total{margin-top:var(--s2); padding-top:var(--s2); border-top:2px solid var(--band-red);
+  display:flex; justify-content:space-between; align-items:baseline; gap:var(--s2); flex-wrap:wrap}
+.bonus-total .lab{font-size:.9375rem; letter-spacing:-.015em; color:var(--band-label-2)}
+.bonus-total .sum{font-size:1.625rem; font-weight:700; letter-spacing:.006em; font-variant-numeric:tabular-nums; color:var(--band-label)}
+.bonus-total .sum small{font-size:.9375rem; font-weight:600; color:var(--band-red); margin-left:6px; letter-spacing:-.015em; white-space:nowrap}
+
+.guar .promise{margin-top:var(--s3); font-size:clamp(1.125rem, 3vw, 1.3125rem); line-height:1.6; font-weight:700;
+  letter-spacing:-.012em; color:var(--band-label); border-left:4px solid var(--band-red); padding-left:16px;
+  word-break:auto-phrase; line-break:strict}
+.guar .cond-h{margin-top:var(--s3); font-size:.8125rem; font-weight:600; letter-spacing:.04em; color:var(--band-red)}
+.cond{list-style:none; margin:var(--s1) 0 0; padding:0}
+.cond li{display:flex; gap:12px; align-items:flex-start; padding:9px 0; font-size:.9375rem; line-height:1.7;
+  letter-spacing:-.015em; color:var(--band-label-2); border-top:1px solid var(--band-separator)}
+.cond li:first-child{border-top:0}
+.cond .ic{width:22px; height:22px; color:var(--band-red); margin-top:2px}
+
+.slots-n{margin-top:var(--s3); display:flex; align-items:baseline; gap:6px; flex-wrap:wrap; color:var(--band-label)}
+.slots-n .big{font-size:2.75rem; line-height:1; font-weight:700; letter-spacing:.01em; font-variant-numeric:tabular-nums; color:var(--band-red)}
+.slots-n .unit{font-size:1.0625rem; font-weight:600; letter-spacing:-.026em}
+.slots-n .of{font-size:.9375rem; letter-spacing:-.015em; color:var(--band-label-2); margin-left:4px; font-variant-numeric:tabular-nums}
+.slots{display:flex; gap:6px; margin-top:var(--s2)}
+.slots span{flex:1; height:8px; border-radius:980px; background:rgba(255,255,255,.14)}
+.slots span.open{background:var(--band-red)}
+.opanel .why{margin-top:var(--s2); font-size:.9375rem; line-height:1.8; letter-spacing:-.015em; color:var(--band-label-2)}
+.dead{margin-top:var(--s3); display:grid; gap:var(--s1)}
+@media(min-width:420px){ .dead{grid-template-columns:1fr 1fr} }
+.dead div{border-radius:14px; background:rgba(255,255,255,.06); padding:12px 14px}
+.dead .k{display:block; font-size:.75rem; font-weight:600; letter-spacing:.04em; color:var(--band-label-2)}
+.dead .v{display:block; margin-top:2px; font-size:1.0625rem; font-weight:700; letter-spacing:-.026em; color:var(--band-label); font-variant-numeric:tabular-nums}
+.dead .v em{display:block; font-style:normal; font-size:.875rem; font-weight:600; color:var(--band-red)}
+.offer-cta{margin-top:var(--s3)}
+[data-offer-state="full"] .only-open, [data-offer-state="open"] .only-full{display:none}
+.offer-bar{text-align:center; margin-top:var(--s4)}
+.offer-bar .btnrow{margin-top:var(--s3)}
+.offer-bar .fine{font-size:.9375rem; line-height:1.8; letter-spacing:-.015em; color:var(--band-label-2)}
+.offer-bar .fine em{font-style:normal; color:var(--band-red); font-weight:600; font-variant-numeric:tabular-nums}
+
+/* the same numbers, quoted in the hero and the closing */
+.slotline{display:inline-flex; align-items:center; gap:8px; margin-top:var(--s3); padding:8px 14px 8px 10px;
+  border-radius:980px; border:1px solid rgba(255,255,255,.22); background:rgba(0,0,0,.35);
+  font-size:.875rem; line-height:1.5; letter-spacing:-.01em; color:rgba(255,255,255,.88); font-variant-numeric:tabular-nums}
+.slotline::before{content:""; width:8px; height:8px; border-radius:980px; background:var(--band-red); flex:none}
+.slotline em{font-style:normal; color:#fff; font-weight:700}
+.ctabox .slotline{margin-top:var(--s3)}
+
 /* ---- FAQ ---- */
 .faq{margin-top:var(--s5); background:var(--card); border-radius:16px; box-shadow:var(--card-shadow); overflow:hidden}
 .faq details{border-bottom:1px solid var(--separator)}
@@ -551,6 +622,7 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
       <a href="#/#method">進め方</a>
       <a href="#/#results">生徒の変化</a>
       <a href="#/#story">Rafaについて</a>
+      <a href="#/#offer">特典・保証</a>
       <a href="#/#faq">よくある質問</a>
     </nav>
     <a class="btn btn-red navcta" href="#/#contact">まずは相談してみる</a>
@@ -562,6 +634,7 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
       <a href="#/#results">生徒の変化</a>
       <a href="#/#story">Rafaについて</a>
       <a href="#/#service">サポート内容</a>
+      <a href="#/#offer">特典・保証</a>
       <a href="#/#faq">よくある質問</a>
       <a href="#/#contact">まずは相談してみる</a>
     </div>
@@ -584,6 +657,7 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
         <a class="btn btn-outline" href="#method">RafaCoachの進め方を見る</a>
       </div>
       <p class="fine rv" data-d="280">相談だけで終わっても大丈夫です。今の生活と、これまでに試したことを聞かせてください。</p>
+      <p class="slotline rv" data-d="300" data-offer-state="open"><span class="only-open">今月の新規枠 残り<em data-offer="left">–</em>名（<span data-offer="deadline">–</span>締切）</span><span class="only-full">今月の枠は満席。<span data-offer="start">–</span>スタート枠を受付中</span></p>
       <div class="stats rv" data-d="320">
         <div><div class="big">IFBB</div><div class="lab">国際公認資格</div></div>
         <div><div class="big">6+</div><div class="lab">年の指導歴</div></div>
@@ -834,6 +908,70 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
   </div>
 </section>
 
+<section class="sec sec-dark" id="offer">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow rv">特典・保証</span>
+      <h2 class="rv" data-d="80">「今度こそ」を、<br class="nb">特典と保証で支えます。</h2>
+      <p class="sub rv" data-d="160">サポート本体に加えて、つまずきやすい場面ごとの特典をつけました。そして、決めたことをやり切った人には保証をつけます。</p>
+    </div>
+
+    <div class="offer-grid">
+      <!-- 特典（ボーナス）
+           「〇〇円相当」は、単体で提供した場合の実際の価格を根拠にしてください。
+           data-yen の数字を合計して、下の「特典合計」に自動で表示します。 -->
+      <div class="opanel rv" data-d="0">
+        <div class="ph"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-plus"></use></svg></span><div><h3>お申し込みの方に、すべて無料でつけます</h3><small>コーチング料金に含まれます。追加費用はありません。</small></div></div>
+        <ul class="bonus">
+          <li data-yen="9800"><span class="tag">特典1</span><div class="bt"><b>コンビニ・外食 攻略ガイド（PDF）</b><p>セブン・ローソン・ファミマ、牛丼チェーン、ファミレス。そのまま選べる組み合わせ表です。</p></div><span class="val">単体価格<strong>9,800円相当</strong></span></li>
+          <li data-yen="14800"><span class="tag">特典2</span><div class="bt"><b>フォーム動画ライブラリ</b><p>主要種目のフォームと、よくあるミスの直し方。あなたのプランの種目に紐づけてお渡しします。</p></div><span class="val">単体価格<strong>14,800円相当</strong></span></li>
+          <li data-yen="12000"><span class="tag">特典3</span><div class="bt"><b>月1回のビデオ通話（30分）</b><p>数字だけでは見えない生活の変化を、月に1回、直接話して整理します。</p></div><span class="val">単体価格<strong>12,000円相当／月</strong></span></li>
+          <li data-yen="4800"><span class="tag">特典4</span><div class="bt"><b>あなた専用の買い物リスト</b><p>スーパー・コストコ・ネットで買うものを週単位で。売り場で迷う時間をなくします。</p></div><span class="val">単体価格<strong>4,800円相当</strong></span></li>
+          <li data-yen="8000"><span class="tag">特典5</span><div class="bt"><b>生活が変わった時のプラン組み直し（回数無制限）</b><p>異動、繁忙期、シフト変更、家族の予定。期間中は何度でも作り直します。</p></div><span class="val">単体価格<strong>8,000円相当／回</strong></span></li>
+        </ul>
+        <div class="bonus-total"><span class="lab">特典合計</span><span class="sum"><span data-offer="bonus-total">–</span>円相当以上<small>→ 追加費用 0円</small></span></div>
+      </div>
+
+      <div class="offer-side">
+        <!-- 保証 -->
+        <div class="opanel guar rv" data-d="80">
+          <div class="ph"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-doc-check"></use></svg></span><div><h3>やり切った人への保証</h3><small>結果が出るまで、無料でサポートを続けます</small></div></div>
+          <p class="promise">決めたことをやり切ったのに、期間内に目標へ届かなかったら。届くまで、追加費用なしでサポートを続けます。</p>
+          <p class="cond-h">条件は3つだけ</p>
+          <ul class="cond">
+            <li><svg class="ic" aria-hidden="true"><use href="#ic-doc-check"></use></svg><span>週1回の報告（体重・写真・食事・トレーニング）を毎週出している</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#ic-doc-check"></use></svg><span>設計したトレーニングを90%以上こなしている</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#ic-doc-check"></use></svg><span>食事の目安を守れた日が80%以上ある</span></li>
+          </ul>
+          <p class="fine">延長は、当初の契約期間と同じ期間が上限です。目標と期間はお申し込み時に書面で決めます。詳しくは<a href="#/tokushoho">特定商取引法に基づく表記</a>をご覧ください。</p>
+        </div>
+
+        <!-- 今月の枠・締切（数字は下のスクリプトの OFFER で設定） -->
+        <div class="opanel rv" data-d="160" data-offer-state="open">
+          <div class="ph"><span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#ic-cal2"></use></svg></span><div><h3>今月の新規枠</h3><small>私が一人ひとりに直接返信するため、人数を決めています</small></div></div>
+          <div class="slots-n only-open"><span class="big" data-offer="left">–</span><span class="unit">名 残り</span><span class="of">／ <span data-offer="total">–</span>名まで</span></div>
+          <div class="slots-n only-full"><span class="unit">今月の枠は満席になりました</span></div>
+          <div class="slots" data-offer="meter" aria-hidden="true"></div>
+          <p class="why only-open">枠が埋まった時点で、今月の受付は終了します。締切を過ぎた場合は、翌月スタート枠でのご案内になります。</p>
+          <p class="why only-full">次のスタート枠を受付中です。相談は今からでも受けられます。</p>
+          <div class="dead">
+            <div class="only-open"><span class="k">今月の締切</span><span class="v"><span data-offer="deadline">–</span><em>（あと<span data-offer="days">–</span>日）</em></span></div>
+            <div><span class="k">次のスタート</span><span class="v" data-offer="start">–</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-bar rv" data-d="200" data-offer-state="open">
+      <p class="fine"><span class="only-open">今月は残り<em data-offer="left">–</em>名。<em data-offer="deadline">–</em>までにDMをください。</span><span class="only-full">今月は満席です。<em data-offer="start">–</em>スタート枠の相談を受付中です。</span>相談だけで終わっても大丈夫です。</p>
+      <div class="btnrow center">
+        <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">InstagramのDMで相談する</a>
+        <a class="btn btn-onDark" href="#consult">相談の流れを見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sec sec-soft" id="consult">
   <div class="wrap">
     <div class="shead center">
@@ -880,6 +1018,7 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
       <details><summary>ラーメンや焼肉はやめないといけませんか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>やめません。たんぱく質とカロリーの枠を決めて、その中に好きなものを入れる方式です。全部やめるやり方は長く続かないので、採用していません。</p></details>
       <details><summary>たんぱく質は結局どれくらい必要ですか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>筋肥大目的では、49件の研究をまとめたメタ解析で、体重1kgあたり約1.6g/日を超えると追加の効果が検出されなくなると報告されています。減量中はより多めが推奨されます。正確な数値は個別に設定しますが、ご相談いただく方の多くはこの水準を下回っています。</p><p class="src">出典：<a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener">Morton et al., 2018</a></p></details>
       <details><summary>プロテインは飲まないとだめですか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>必須ではありません。食事から目標量に届くならそれで十分です。研究上も、摂取タイミングより1日の総量のほうが大きく影響すると報告されています。忙しくて食事の回数が確保しづらい方には、手段として便利なので提案することがあります。</p></details>
+      <details><summary>やり切っても結果が出なかったら、どうなりますか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>お申し込み時に決めた目標に期間内で届かなかった場合、毎週の報告・トレーニング実施率90%以上・食事の目安を守れた日80%以上の3つを満たしていれば、当初の契約期間と同じ期間を上限に、追加費用なしでサポートを続けます。返金ではなく、届くまで一緒にやる、という保証です。</p></details>
       <details><summary>地方に住んでいます。対面は必要ですか<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>完全オンラインなので、どの都道府県でも受けられます。対面は行っていません。</p></details>
       <details><summary>持病があります／薬を飲んでいます<svg class="ic plus" aria-hidden="true"><use href="#ic-plus"></use></svg></summary><p>トレーニング・栄養のサポートは、医師の診断や治療に代わるものではありません。持病がある方、服薬中の方、通院中の方は、まず主治医にご相談ください。その上でご相談いただければ、安全な範囲で設計します。</p></details>
     </div>
@@ -892,6 +1031,7 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
       <span class="eyebrow rv">もう一度、ここから</span>
       <h2 class="rv" data-d="80" style="margin-top:12px">何度目の挑戦でもいい。<br>今度は、一人でやらなくていい。</h2>
       <p class="p rv" data-d="140">今の生活、これまでに試したこと、なりたい身体。うまく書けなくても大丈夫です。InstagramのDMから送ってください。私が直接お返事します。相談は無料です。</p>
+      <p class="slotline rv" data-d="170" data-offer-state="open"><span class="only-open">今月の新規枠 残り<em data-offer="left">–</em>名（<span data-offer="deadline">–</span>締切）</span><span class="only-full">今月の枠は満席。<span data-offer="start">–</span>スタート枠を受付中</span></p>
       <div class="btnrow rv" data-d="200">
         <a class="btn btn-red" href="https://www.instagram.com/rafa_reaction/" target="_blank" rel="noopener">InstagramのDMで相談する</a>
       </div>
@@ -962,6 +1102,16 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
         <dd><strong>お客様のご都合による返金は、理由を問わずお受けしておりません。</strong>本サービスはオンラインによる役務（サービス）の提供であり、その性質上、お支払い後のキャンセル・返金には応じかねます。<span class="sub">料金・期間・サポート内容は、無料相談時に書面（またはメール）にてご提示します。内容を十分にご確認・ご納得いただいたうえでお申し込みください。ご不明な点は、お申し込み前に必ずご質問ください。</span></dd>
       </div>
       <div>
+        <dt>サポート延長保証<br>（条件付き）</dt>
+        <dd>お申し込み時に書面で合意した目標に契約期間内に到達しなかった場合、以下の条件をすべて満たしているときは、当初の契約期間と同じ期間を上限として、追加費用なしでサポートを延長します。
+          <ul>
+            <li>週1回の報告（体重・写真・食事・トレーニング記録）を毎週提出していること</li>
+            <li>設計したトレーニングの実施率が90%以上であること</li>
+            <li>食事の目安を守れた日が全期間の80%以上であること</li>
+          </ul>
+          <span class="sub">条件の充足は、お客様から提出いただいた記録に基づき当方が確認します。本保証はサポートの延長を約束するものであり、返金を約束するものではありません。上記「キャンセル・返金について」の定めは変わりません。</span></dd>
+      </div>
+      <div>
         <dt>動作環境</dt>
         <dd>インターネットに接続できるスマートフォン、タブレット、またはパソコン。<br>連絡手段として Instagram のアカウントが必要です。</dd>
       </div>
@@ -970,7 +1120,7 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
     <div class="note">
       <h2>免責事項</h2>
       <p>本サービスはトレーニングおよび食事に関する情報提供・指導であり、医師による診断・治療、または医療機関による栄養指導に代わるものではありません。</p>
-      <p>効果には個人差があり、特定の結果を保証するものではありません。持病のある方、服薬中の方、通院中の方は、ご利用前に必ず主治医にご相談ください。</p>
+      <p>効果には個人差があり、特定の結果を保証するものではありません。上記「サポート延長保証」は、結果そのものではなく、条件を満たした場合のサポート延長をお約束するものです。持病のある方、服薬中の方、通院中の方は、ご利用前に必ず主治医にご相談ください。</p>
     </div>
 
     <div class="note">
@@ -1118,6 +1268,7 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
           <a href="#/#method">進め方</a>
           <a href="#/#results">生徒の変化</a>
           <a href="#/#story">Rafaについて</a>
+          <a href="#/#offer">特典・保証</a>
           <a href="#/#faq">よくある質問</a>
         </nav>
       </div>
@@ -1145,6 +1296,44 @@ h1,h2,h3,h4{margin:0; color:var(--label); text-wrap:balance;
   };
 
   document.documentElement.lang = "ja";
+
+  /* ===== 今月の枠・締切の設定（ここだけ変えれば、ページ内の数字がすべて変わります） =====
+     slotsTotal : 今月の新規受け入れ人数
+     slotsLeft  : 残り枠。申し込みが入るたびに 1 減らしてください。0 にすると「満席」表示になります
+     deadline   : 今月の締切 "2026-10-05" の形。空 "" なら自動で「今月の末日」
+     nextStart  : 次のスタート日 "2026-10-12" の形。空 "" なら自動で「締切の翌月1日」
+     ※ 締切の日付が過ぎたままだと、自動で「今月の末日」に切り替わります。
+        ただし slotsLeft は自動では戻らないので、月が変わったら手で更新してください。 */
+  var OFFER = { slotsTotal: 5, slotsLeft: 3, deadline: "", nextStart: "" };
+
+  (function offer(){
+    var now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    function parse(s){ var m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(s||""); return m ? new Date(+m[1], +m[2]-1, +m[3]) : null; }
+    var dl = parse(OFFER.deadline);
+    if(!dl || dl < today) dl = new Date(today.getFullYear(), today.getMonth()+1, 0);   // 今月末
+    var st = parse(OFFER.nextStart);
+    if(!st || st <= dl) st = new Date(dl.getFullYear(), dl.getMonth()+1, 1);            // 締切の翌月1日
+    var days = Math.round((dl - today) / 864e5);
+    var W = ["日","月","火","水","木","金","土"];
+    function fmt(d){ return (d.getMonth()+1)+"月"+d.getDate()+"日（"+W[d.getDay()]+"）"; }
+    var left = Math.max(0, Math.min(OFFER.slotsTotal, OFFER.slotsLeft|0));
+    var total = 0;
+    document.querySelectorAll(".bonus [data-yen]").forEach(function(li){ total += parseInt(li.getAttribute("data-yen"),10)||0; });
+    var out = {
+      left: String(left), total: String(OFFER.slotsTotal), days: String(days),
+      deadline: fmt(dl), start: fmt(st), "bonus-total": total.toLocaleString("ja-JP")
+    };
+    document.querySelectorAll("[data-offer]").forEach(function(el){
+      var k = el.getAttribute("data-offer");
+      if(k === "meter"){
+        el.innerHTML = "";
+        for(var i=0;i<OFFER.slotsTotal;i++){ var sp=document.createElement("span"); if(i >= OFFER.slotsTotal-left) sp.className="open"; el.appendChild(sp); }
+        return;
+      }
+      if(k in out) el.textContent = out[k];
+    });
+    document.querySelectorAll("[data-offer-state]").forEach(function(el){ el.setAttribute("data-offer-state", left>0 ? "open" : "full"); });
+  })();
 
   // hydrate images
   document.querySelectorAll("img[data-img]").forEach(function(im){
